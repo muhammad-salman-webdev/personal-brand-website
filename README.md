@@ -1,6 +1,6 @@
 # Muhammad Salman – Full Portfolio Website
 
-This is the official source code for my personal brand website: **[muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com){:target="\_blank"}**  
+This is the official source code for my personal brand website: **[muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com)**  
 It highlights my web development journey, skills, services, portfolio, testimonials, blog, and more.
 
 ---
@@ -105,8 +105,8 @@ I have 3+ years of experience in freelancing and have worked with 10+ organizati
 Want to work together? Get in touch:
 
 - 📧 Email: muhammadsalman.webdev@gmail.com
-- 🌐 Website: [muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com){:target="\_blank"}
-- 📱 WhatsApp: [+92106966678](https://wa.me/92106966678){:target="\_blank"}
+- 🌐 Website: [muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com)
+- 📱 WhatsApp: [+92106966678](https://wa.me/92106966678)
 
 ---
 
@@ -115,7 +115,7 @@ Want to work together? Get in touch:
 Deployed on:
 
 - Hosting: Hostinger
-- Domain: [muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com){:target="\_blank"}
+- Domain: [muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com)
 <!-- - CDN / Performance: Optional (e.g., Cloudflare) -->
 
 ---
@@ -129,4 +129,4 @@ Stay tuned for the launch and updates.
 
 ## ⭐️ Show Your Support
 
-If you like this project, give it a ⭐️ on GitHub, or connect with me on [muhammadsalmanwebdev.com](https://linkedin.com/in/muhammad-salman-webdev/){:target="\_blank"}.
+If you like this project, give it a ⭐️ on GitHub, or connect with me on [muhammadsalmanwebdev.com](https://linkedin.com/in/muhammad-salman-webdev/).
