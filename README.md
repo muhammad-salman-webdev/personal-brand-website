@@ -106,7 +106,7 @@ Want to work together? Get in touch:
 
 - 📧 Email: muhammadsalman.webdev@gmail.com
 - 🌐 Website: [muhammadsalmanwebdev.com](https://muhammadsalmanwebdev.com){:target="\_blank"}
-- 📱 WhatsApp: [+92106966678](https://wa.me/92106966678){target="\_blank"}
+- 📱 WhatsApp: [+92106966678](https://wa.me/92106966678){:target="\_blank"}
 
 ---
 
