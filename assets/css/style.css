@@ -1,0 +1,121 @@
+/* Custom Fonts */
+@import url('./fonts.css');
+/* Reset Browser Rendered Styles */
+@import url('./reset.css');
+
+/* Regular CSS */
+/* Background Styling */
+/* Animations */
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.stars_BG {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* Purple */
+    background-color: #06011b;
+    /* Black */
+    background-color: #000000;
+    z-index: -1;
+
+    .stars,
+    .twinkling {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .stars {
+        background: transparent url(../../assets/media/bg/stars.png) repeat top center;
+        z-index: 0;
+        -moz-animation: move-twink-back 5000s linear infinite;
+        -ms-animation: move-twink-back 5000s linear infinite;
+        -o-animation: move-twink-back 5000s linear infinite;
+        -webkit-animation: move-twink-back 5000s linear infinite;
+        animation: move-twink-back 5000s linear infinite;
+        /* opacity: .5; */
+    }
+
+    .twinkling {
+        background: transparent url(../../assets/media/bg/twinkling-purple.svg) repeat top center;
+        background: transparent url(../../assets/media/bg/twinkling-black.svg) repeat top center;
+        z-index: 1;
+        -moz-animation: move-twink-back 200s linear infinite;
+        -ms-animation: move-twink-back 200s linear infinite;
+        -o-animation: move-twink-back 200s linear infinite;
+        -webkit-animation: move-twink-back 200s linear infinite;
+        animation: move-twink-back 200s linear infinite;
+    }
+}
+
+/* Background Stars Twinkling CSS */
+/* ################ */
+/* ################ */
+/* ################ */
+/* ################ */
+/* ################ */
+/* ################ */
+/* ################ */
+/* ################ */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+}

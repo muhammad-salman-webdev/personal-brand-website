@@ -1,0 +1,56 @@
+/* Britti Font */
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrittSans';
+    src: url('../fonts/britti-sans/BrittiSansTrial-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
