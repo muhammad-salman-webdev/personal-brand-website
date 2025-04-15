@@ -2,6 +2,8 @@
 @import url('./fonts.css');
 /* Reset Browser Rendered Styles */
 @import url('./reset.css');
+/* Global Stylings */
+@import url('./global.css');
 
 /* Regular CSS */
 /* Background Styling */
@@ -112,10 +114,75 @@
 /* ################ */
 /* ################ */
 body {
+    color: white;
+}
+
+/* Global Classes */
+.container {
+    max-width: 1280px;
+    width: calc(100% - 120px);
+    margin: 0 auto;
+}
+
+/* ########## */
+/* ########## */
+/* ########## */
+/* ########## */
+/* ########## */
+/* ########## */
+/* HEADER */
+.header-section {
+    background-color: #2209509a;
+    box-shadow: 0px 0px 10px #220950;
+    backdrop-filter: blur(12px);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    /* border-radius: 50px; */
+}
+
+.header-main {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: white;
-    text-align: center;
+    height: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 55px;
+    display: flex;
+}
+
+.header-content {
+    background-color: pink;
+}
+
+.header-navbar-container {
+    background: red;
+}
+
+.header-navbar ul {
+    font-size: 22px;
+    display: flex;
+
+    li {
+        a {
+            color: white;
+            display: block;
+        }
+    }
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
 }
