@@ -1,0 +1,342 @@
+/* Plasma Button */
+.c_plasma-button {
+    display: block;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    overflow: visible;
+    transform: scale(1);
+    max-width: max-content;
+
+    &,
+    * {
+        transition: all 0.3s ease;
+    }
+
+    .c_plasma-button-inner {
+        background-color: rgb(59, 59, 59);
+        border-radius: 11.5px;
+        display: block;
+        align-content: center;
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: min-content;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1.5px;
+        position: relative;
+        /* width: auto; */
+        /* will-change: var(--framer-will-change-override, transform); */
+        z-index: 2;
+        background-color: rgb(59, 59, 59);
+        border-radius: 11.5px;
+        opacity: 1;
+
+        .c_plasma-button-inner-box {
+            align-items: center;
+            display: flex;
+            flex: none;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 10px;
+            height: min-content;
+            justify-content: center;
+            overflow: hidden;
+            padding: 7px 16px;
+            position: relative;
+            width: 100%;
+            /* will-change: var(--framer-will-change-override, transform); */
+            z-index: 4;
+            --token-4afc5ccf-bc51-4b9c-8168-fdeed00f09c1: rgb(12, 12, 12);
+            background-color: var(--token-4afc5ccf-bc51-4b9c-8168-fdeed00f09c1,
+                    rgb(12, 12, 12));
+            border-radius: 10px;
+            opacity: 1;
+
+            .c_plamsa-button-inner-glow-1 {
+                flex: none;
+                height: 84px;
+                left: calc(30.693069306930713% - 30px / 2);
+                overflow: hidden;
+                position: absolute;
+                top: calc(51.21951219512197% - 84px / 2);
+                width: 30px;
+                z-index: 1;
+                background-color: rgb(0, 0, 0);
+                filter: blur(5px);
+                transform: rotate(-30deg);
+                opacity: 1;
+            }
+
+            .c_plamsa-button-inner-glow-2 {
+                flex: none;
+                height: 39px;
+                left: calc(1.5444015444015666% - 75px / 2);
+                overflow: hidden;
+                position: absolute;
+                top: calc(90.66666666666669% - 39px / 2);
+                width: 75px;
+                will-change: var(--framer-will-change-override, transform);
+                z-index: 1;
+                background: radial-gradient(50% 50% at 50% 50%,
+                        rgb(19, 0, 191) 0%,
+                        rgba(0, 0, 0, 0) 100%);
+                border-radius: 999px;
+                filter: blur(10px);
+                opacity: 0.41;
+                will-change: transform;
+            }
+
+            .c_plamsa-button-inner-glow-3 {
+                flex: none;
+                height: 42px;
+                left: calc(74.90347490347492% - 95px / 2);
+                overflow: hidden;
+                position: absolute;
+                top: calc(2.220446049250313px - 14% - 21px);
+                width: 95px;
+                will-change: var(--framer-will-change-override, transform);
+                z-index: 1;
+                background: radial-gradient(50% 50% at 50% 50%,
+                        rgb(115, 115, 115) 0%,
+                        rgba(0, 0, 0, 0) 100%);
+                border-radius: 999px;
+                filter: blur(10px);
+                opacity: 1;
+            }
+
+            span {
+                display: block;
+                position: relative;
+                z-index: 2;
+                will-change: transform;
+                font-size: 16px;
+            }
+        }
+
+        .c_plasma-button-inner-top-right-glow {
+            flex: none;
+            height: 36px;
+            overflow: hidden;
+            position: absolute;
+            right: -17px;
+            top: -19px;
+            width: 95px;
+            z-index: 1;
+            background-color: rgb(255, 255, 255);
+            filter: blur(8px);
+            opacity: 1;
+        }
+
+        .c_plasma-button-inner-bototm-left-glow {
+            bottom: -18px;
+            flex: none;
+            height: 46px;
+            left: -22px;
+            overflow: hidden;
+            position: absolute;
+            width: 54px;
+            z-index: 1;
+            background-color: rgb(19, 0, 191);
+            filter: blur(8px);
+            transform: none;
+            transform-origin: 50% 50% 0px;
+        }
+
+        .c_plasma-button-inner-bototm-left-glow-2 {
+            bottom: -17px;
+            flex: none;
+            height: 34px;
+            left: -22px;
+            overflow: hidden;
+            position: absolute;
+            width: 40px;
+            z-index: 1;
+            background-color: rgb(0, 217, 255);
+            filter: blur(8px);
+            transform: none;
+            transform-origin: 50% 50% 0px;
+            /* transform: scale(1.25); */
+        }
+    }
+
+    .c_plasma-button-top-right-glow {
+        position: absolute;
+        flex: none;
+        height: 41px;
+        overflow: hidden;
+        position: absolute;
+        right: -12px;
+        top: -7px;
+        width: 73px;
+        /* will-change: var(--framer-will-change-override, transform); */
+        z-index: 1;
+        background: radial-gradient(50% 50% at 50% 50%,
+                rgb(255, 255, 255) 0%,
+                rgba(0, 0, 0, 0) 100%);
+        border-bottom-left-radius: 21px;
+        border-bottom-right-radius: 21px;
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        opacity: 0.62;
+    }
+
+    .c_plasma-button-bottom-left-glow {
+        height: 29px;
+        left: -11px;
+        overflow: hidden;
+        position: absolute;
+        top: calc(83.95061728395063% - 29px / 2);
+        width: 55px;
+        /* will-change: var(--framer-will-change-override, transform); */
+        z-index: 1;
+        background: radial-gradient(50% 50% at 50% 50%,
+                rgb(19, 0, 191) 0%,
+                rgba(0, 0, 0, 0) 100%);
+        border-radius: 999px;
+        filter: blur(10px);
+        opacity: 1;
+    }
+
+    .c_plasma-button-bg-circle {
+        position: absolute;
+        width: 40px;
+        aspect-ratio: 1/1;
+        background: white;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        filter: blur(20px);
+        transform: scale(0);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0.35;
+        pointer-events: none;
+    }
+
+    &:hover {
+        .c_plasma-button-inner {
+            .c_plasma-button-inner-bototm-left-glow-2 {
+                transform: scale(1.45);
+                transform: scale(1.85);
+            }
+
+            .c_plasma-button-inner-bototm-left-glow {
+                transform: scale(1.45);
+                transform: scale(1.85);
+                translate: -5px -5px;
+                rotate: 54deg;
+                /* filter: blur(4px); */
+            }
+
+            .c_plasma-button-inner-box {
+                display: flex;
+
+                .c_plamsa-button-inner-glow-3 {
+                    transform: scale(1.15) translate(-2px, 1px);
+                }
+
+                .c_plamsa-button-inner-glow-2 {
+                    transform: scale(1.35);
+                }
+            }
+        }
+    }
+
+    &:hover {
+
+        /* transform: scale(1.2); */
+        .c_plasma-button-bg-circle {
+            transform: scale(1);
+        }
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* Header */
+.header-section {
+    position: relative;
+    z-index: 2;
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        height: 100px;
+
+        .header-logo {
+            width: 160px;
+            display: flex;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header-nav-container {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            gap: 30px;
+            align-items: center;
+
+            .nav-container {
+                &>nav {
+                    &>ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        &>li {
+                            &>a {
+                                &:hover {
+                                    opacity: .7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

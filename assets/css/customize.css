@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    /* transition: all .3s ease; */
+}
+
+:root {
+    --black: #040404;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a,
+p {
+    font-size: 18px;
+}
+
+p {
+    color: rgb(214, 214, 214);
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86px;
+
+    span {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+    }
+}
+
+/* h2 {
+    font-size: 16px;
+    font-weight: 400;
+} */
+/* Reusable Classes */
+.container {
+    width: 96%;
+    max-width: 1248px;
+    margin: 0 auto;
+}

@@ -1,0 +1,153 @@
+@import url('../fonts/fonts.css');
+@import url('./customize.css');
+@import url('./components.css');
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.hero-bg-video {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transform: scale(1.25);
+    }
+}
+
+.hero-section {
+    position: relative;
+    z-index: 2;
+
+    .hero-section-container {
+        min-height: calc(100dvh - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 0;
+
+        .hero-content-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+
+            .hero-title {
+                color: hsla(0, 0%, 100%, 0.75);
+                color: white;
+
+                span {
+                    /* color: transparent;
+                    background: linear-gradient(90deg,
+                            #4da9df 0%,
+                            #5cd8c3 15%,
+                            #5cd88f 30%,
+                            #72cefb 50%,
+                            #a3e2fc 65%,
+                            #ffffff 80%,
+                            #56dda9 90%,
+                            #56dda9 100%);
+                    background-size: 200% 100%;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    animation: gradientShift 6s linear infinite; */
+                    color: hsla(0, 0%, 100%, 0.90);
+                    color: white;
+                }
+            }
+
+            p {
+                max-width: 660px;
+            }
+
+            .hero-cta-button {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+.brands-worked-with-container {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    &>h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .brands-worked-with-swiper {
+        position: relative;
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+        max-width: 1000px;
+        margin: 50px auto 0;
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+        .swiper-slide {
+            width: 125px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
