@@ -1,0 +1,462 @@
+.project-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    h2 {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .project-title {
+        display: flex;
+        gap: 6px;
+
+        span {
+            background-color: var(--light-gray);
+            padding: 6px;
+            border-radius: 12px;
+            font-size: 10px;
+            letter-spacing: .5px;
+        }
+    }
+}
+
+.project-disc {
+    >p {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    width: 300px;
+}
+
+/* ######################## */
+/*  Project Heading Ends    */
+/* ######################## */
+/* ############################### */
+/* ############################### */
+/* ############################### */
+/* ############################### */
+/* ############################### */
+/*  Project Achievement Starts     */
+/* ############################### */
+.project-achievement {
+    display: flex;
+    padding: 56px;
+    border: 2px solid rgb(73, 71, 71);
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+
+    >p {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: var(--light-gray);
+        font-size: 20px;
+
+        span {
+            color: var(--white);
+        }
+    }
+}
+
+.acheivement-list {
+    display: flex;
+    gap: 50px;
+
+    .item {
+        text-align: center;
+
+        :nth-child(1) {
+            font-size: 35px;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        :nth-child(2) {
+            font-size: 10px;
+            font-weight: 400;
+            color: var(--light-gray);
+        }
+    }
+}
+
+/* ############################### */
+/*  Project Achievement   Ends     */
+/* ############################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/*    Project Overview Section Starts     */
+/* ###################################### */
+.overview-image {
+    margin-top: 50px;
+    margin: 10px auto 40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* ################################### */
+/*    Project Overview Section Ends     */
+/* #################################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/* ###################################### */
+/* ################################# */
+/* Project Challenge Section Starts  */
+/* ################################# */
+.project-chal-container {
+    .chal-content {
+        margin-top: 10px;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        max-width: 570px;
+
+        span {
+            color: var(--light-gray);
+        }
+    }
+}
+
+.chal-Tags-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 34px;
+
+    .indus-tags-box {
+        font-size: 12px;
+        font-weight: 500;
+
+        >p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .indus-tags {
+            display: flex;
+            gap: 6px;
+        }
+    }
+
+    .service-tags-box {
+        font-size: 12px;
+        font-weight: 500;
+
+        >p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .service-tags {
+            display: flex;
+            gap: 6px;
+        }
+    }
+}
+
+/* ############################### */
+/* Project Challenge Section Ends  */
+/* ############################### */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ############################ */
+/* ########################## */
+/* Project Highlight Container  */
+/* ########################## */
+.project-highlight-container {
+    .highlight-grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto;
+        margin: 70px auto 100px;
+
+        img {
+            border-radius: 12px;
+            object-fit: cover;
+
+            &:nth-child(1) {}
+
+            &:nth-child(2) {}
+
+            &:nth-child(3) {}
+
+            &:nth-child(4) {}
+
+            &:nth-child(5) {}
+
+            &:nth-child(6) {}
+
+            &:nth-child(7) {}
+
+            &:nth-child(8) {
+                width: 300px;
+            }
+
+            &:nth-child(9) {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* ########################## */
+/* Project Highlight Container  */
+/* ########################## */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################### */
+/* Project Development Container  */
+/* ############################### */
+.project-develop-container {
+    margin: 100px 0;
+
+    .light-btn {
+        margin: 0 auto;
+    }
+
+    .work-content {
+        margin: 0 auto;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 590px;
+        font-size: 20px;
+
+        span {
+            color: var(--white);
+        }
+    }
+}
+
+.develop-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.develop-card {
+    display: flex;
+    gap: 20px;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    .develop-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid #dfe0e4;
+        max-width: 35%;
+        border-radius: 12px;
+        padding: 20px;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            color: var(--light-gray);
+            line-height: 15px;
+        }
+    }
+
+    .develop-image {
+        width: 100%;
+
+        img {
+            border-radius: 12px;
+            width: 100%;
+        }
+    }
+}
+
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+.approach-container {
+    padding: 100px 70px;
+
+    .approach-title {
+        font-size: 35px;
+        max-width: 390px;
+        margin: 20px 0;
+
+        span {
+            color: var(--light-gray);
+        }
+    }
+
+    .approach-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        .approach-card {
+            border: 2px solid var(--light-gray);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 12px;
+
+            p {
+                color: var(--white);
+                line-height: 16px;
+                font-size: 12px;
+            }
+
+            span {
+                color: var(--light-gray);
+            }
+        }
+    }
+}
+
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+.shopify-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px 50px;
+    padding: 40px;
+    background: var(--white);
+    background-image: url(../media/images/background-image.webp);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    >.title {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        max-width: 530px;
+        color: var(--light-gray);
+
+        span {
+            color: var(--black);
+        }
+    }
+}
+
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+.testi-container {
+    margin: 70px 0;
+
+    /* margin: 0 auto; */
+    span {
+        margin: 0 auto;
+    }
+
+    .testi-content {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 760px;
+        font-size: 34px;
+        padding: 20px 0;
+
+        span {
+            color: var(--light-gray);
+        }
+    }
+}
+
+.testi-profile {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .profile-image {
+        width: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .profile-detail {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+
+        .profile-desc {
+            font-size: 14px;
+            color: var(--light-gray);
+        }
+    }
+}
+
+.testi-client-image {
+    border-radius: 12px;
+    width: 100px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.testi-video-button {
+    background-image: url(../media/images/testimonial-client-image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

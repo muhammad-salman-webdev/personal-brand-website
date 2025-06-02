@@ -13,7 +13,10 @@
 }
 
 :root {
-    --black: #000000;
+      --black: #000000;
+
+    --light-gray: #b9b0b0;
+    --white: #fff;
 }
 
 body {
@@ -76,12 +79,31 @@ h3 {
         color: rgb(255, 255, 255);
     }
 }
-
+ 
 /* Reusable Classes */
 .container {
-    width: 96%;
+    width: 94%;
     max-width: 1248px;
     margin: 0 auto;
+}
+
+.title {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 4px 12px;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    border-radius: 6px;
+
+    p {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
 
 /* Fullscreen overlay */
@@ -95,5 +117,5 @@ h3 {
     width: 100vw;
     height: 100vh;
     background: rgb(0, 0, 0);
-    z-index: 9999;
+    z-index: 9999; 
 }
