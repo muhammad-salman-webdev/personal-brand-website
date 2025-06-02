@@ -5,21 +5,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom CSS File Links -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome Pro Icons Link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
-      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      href="assets/icons/fontawesome-pro-icons/css/all.min.css" />
+
+    <!-- Swiper min CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
+    <!-- Custom CSS File Links -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- Title -->
-    <title>Document</title>
+    <title>Home Page</title>
   </head>
   <body>
+    <div id="preloader"> </div>
+
     <!-- ----------------- -->
     <!-- START :: BG Video -->
     <!-- ----------------- -->
+
     <div class="hero-bg-video">
       <video
         id="heroVideo"
@@ -28,6 +36,7 @@
         muted
         loop></video>
     </div>
+
     <!-- --------------- -->
     <!-- END :: BG Video -->
     <!-- --------------- -->
@@ -46,7 +55,8 @@
     <!-- ----------------------- -->
     <!-- START :: Header Section -->
     <!-- ----------------------- -->
-    <section class="header-section">
+
+    <section class="header-section" id="headerMain">
       <div class="container">
         <header class="header-container">
           <!-- Logo -->
@@ -82,7 +92,7 @@
             </div>
             <!-- Right Button -->
             <div class="header-right-button">
-              <a href="#" class="c_plasma-button">
+              <a href="#" class="c_plasma-button animate__randomly_on_hover">
                 <div class="c_plasma-button-inner">
                   <div class="c_plasma-button-inner-box">
                     <div class="c_plamsa-button-inner-glow-1"></div>
@@ -103,6 +113,7 @@
         </header>
       </div>
     </section>
+
     <!-- --------------------- -->
     <!-- End :: Header Section -->
     <!-- --------------------- -->
@@ -121,31 +132,35 @@
     <!-- --------------------- -->
     <!-- START :: Hero Section -->
     <!-- --------------------- -->
-    <section class="hero-section">
+
+    <section class="hero-section" id="heroSection">
       <div class="container">
         <div class="hero-section-container">
           <!-- Hero Content -->
           <div class="hero-content-container">
             <!-- H1 - Title -->
-            <h1 class="hero-title">
+            <h1 class="hero-title color__diff" id="heroTitle">
               Elevate Your Business with <br />
               <span>Custom Website </span> Solutions
             </h1>
             <!-- P - Description -->
-            <p>
-              Our team of creative experts delivers stunning, high-quality
+            <p id="heroTitleDesc">
+              <!-- Our team of creative experts delivers stunning, high-quality
               designs tailored to your needs, ensuring your brand stands out in
-              a crowded market.
+              a crowded market. -->
+              From design to development, I deliver exceptional web experiences
+              that elevate brands, drive engagement, and help businesses grow
+              online.
             </p>
             <!-- Button - CTA -->
-            <div class="hero-cta-button">
-              <a href="#" class="c_plasma-button">
+            <div class="hero-cta-button" id="heroCtaBtn">
+              <a href="#" class="c_plasma-button animate__randomly">
                 <div class="c_plasma-button-inner">
                   <div class="c_plasma-button-inner-box">
                     <div class="c_plamsa-button-inner-glow-1"></div>
                     <div class="c_plamsa-button-inner-glow-2"></div>
                     <div class="c_plamsa-button-inner-glow-3"></div>
-                    <span>Book a Call</span>
+                    <span>Book a Free Call</span>
                   </div>
                   <div class="c_plasma-button-inner-top-right-glow"></div>
                   <div class="c_plasma-button-inner-bototm-left-glow"></div>
@@ -159,84 +174,51 @@
           </div>
           <!-- Hero Brands Logo -->
           <div class="brands-worked-with-container">
-            <h3>Trusted by leading brands: </h3>
-            <div class="swiper brands-worked-with-swiper">
-              <div class="swiper-wrapper">
-                <!-- Logos -->
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-5.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
-                    alt="#" />
+            <h3 id="heroBrandsLogoHeading">Trusted by leading brands: </h3>
+            <div id="heroBrandsLogoSwiper">
+              <div class="swiper brands-worked-with-swiper">
+                <div class="swiper-wrapper">
+                  <!-- Logos -->
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-5.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      alt="#" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,6 +226,7 @@
         </div>
       </div>
     </section>
+
     <!-- ------------------- -->
     <!-- End :: Hero Section -->
     <!-- ------------------- -->
@@ -259,12 +242,323 @@
     <!-- ######################################### -->
     <!-- ######################################### -->
 
+    <!-- ------------------------- -->
+    <!-- START :: Projects Section -->
+    <!-- ------------------------- -->
+
+    <section class="projects-section" id="projectsSection">
+      <div class="container">
+        <div class="projects-section-header">
+          <h2 class="color__diff" id="projectsHeading">
+            View <span>My Projects</span>
+          </h2>
+          <p id="projectsTitleDesc">
+            See how my unique blend of flexibility, expertise, and innovation
+            transforms each project into a standout success.
+          </p>
+        </div>
+        <div class="projects-container" id="projectsContainer">
+          <a href="#" class="project-box-container">
+            <!-- Click to view - Floating Label -->
+            <div class="floating-label"> View Success Story </div>
+
+            <!-- Light Effect on Hover -->
+            <div class="light-effect"> </div>
+
+            <!-- Project Image -->
+            <div class="project-img">
+              <img
+                src="assets/media/images/project-images/project-01/mobile-mockup.webp"
+                alt="#" />
+            </div>
+            <!-- Tags -->
+            <div class="project-tags">
+              <div class="project-tag"> Business Website </div>
+              <div class="project-tag"> WordPress Development </div>
+              <div class="project-tag"> Ecommerce Development </div>
+            </div>
+            <!-- Project Details -->
+            <div class="project-summary">
+              <!-- Name -->
+              <div class="project-details">
+                <!-- Name -->
+                <div class="project-name">
+                  <h3>Eclipse Interactive</h3>
+                  <div class="projects-techs">
+                    <div>Shopify Development </div>
+                    <div> / </div>
+                    <div> Headless </div>
+                    <div> / </div>
+                    <div> SEO optimisation </div>
+                  </div>
+                </div>
+                <!-- Icon -->
+                <div class="arrow-icon">
+                  <i class="fa-light fa-arrow-up arrow-1"></i>
+                  <i class="fa-light fa-arrow-up arrow-2"></i>
+                </div>
+              </div>
+              <!-- Small Mockups -->
+              <div class="project-small-mockups">
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-01.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-02.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-03.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-04.webp"
+                    alt="#" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-box-container">
+            <!-- Click to view - Floating Label -->
+            <div class="floating-label"> View Success Story </div>
+
+            <!-- Light Effect on Hover -->
+            <div class="light-effect"> </div>
+
+            <!-- Project Image -->
+            <div class="project-img">
+              <img
+                src="assets/media/images/project-images/project-01/mobile-mockup.webp"
+                alt="#" />
+            </div>
+            <!-- Tags -->
+            <div class="project-tags">
+              <div class="project-tag"> Business Website </div>
+              <div class="project-tag"> WordPress Development </div>
+              <div class="project-tag"> Ecommerce Development </div>
+            </div>
+            <!-- Project Details -->
+            <div class="project-summary">
+              <!-- Name -->
+              <div class="project-details">
+                <!-- Name -->
+                <div class="project-name">
+                  <h3>Eclipse Interactive</h3>
+                  <div class="projects-techs">
+                    <div>Shopify Development </div>
+                    <div> / </div>
+                    <div> Headless </div>
+                    <div> / </div>
+                    <div> SEO optimisation </div>
+                  </div>
+                </div>
+                <!-- Icon -->
+                <div class="arrow-icon">
+                  <i class="fa-light fa-arrow-up arrow-1"></i>
+                  <i class="fa-light fa-arrow-up arrow-2"></i>
+                </div>
+              </div>
+              <!-- Small Mockups -->
+              <div class="project-small-mockups">
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-01.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-02.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-03.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-04.webp"
+                    alt="#" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-box-container">
+            <!-- Click to view - Floating Label -->
+            <div class="floating-label"> View Success Story </div>
+
+            <!-- Light Effect on Hover -->
+            <div class="light-effect"> </div>
+
+            <!-- Project Image -->
+            <div class="project-img">
+              <img
+                src="assets/media/images/project-images/project-01/mobile-mockup.webp"
+                alt="#" />
+            </div>
+            <!-- Tags -->
+            <div class="project-tags">
+              <div class="project-tag"> Business Website </div>
+              <div class="project-tag"> WordPress Development </div>
+              <div class="project-tag"> Ecommerce Development </div>
+            </div>
+            <!-- Project Details -->
+            <div class="project-summary">
+              <!-- Name -->
+              <div class="project-details">
+                <!-- Name -->
+                <div class="project-name">
+                  <h3>Eclipse Interactive</h3>
+                  <div class="projects-techs">
+                    <div>Shopify Development </div>
+                    <div> / </div>
+                    <div> Headless </div>
+                    <div> / </div>
+                    <div> SEO optimisation </div>
+                  </div>
+                </div>
+                <!-- Icon -->
+                <div class="arrow-icon">
+                  <i class="fa-light fa-arrow-up arrow-1"></i>
+                  <i class="fa-light fa-arrow-up arrow-2"></i>
+                </div>
+              </div>
+              <!-- Small Mockups -->
+              <div class="project-small-mockups">
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-01.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-02.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-03.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-04.webp"
+                    alt="#" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="project-box-container">
+            <!-- Click to view - Floating Label -->
+            <div class="floating-label"> View Success Story </div>
+
+            <!-- Light Effect on Hover -->
+            <div class="light-effect"> </div>
+
+            <!-- Project Image -->
+            <div class="project-img">
+              <img
+                src="assets/media/images/project-images/project-01/mobile-mockup.webp"
+                alt="#" />
+            </div>
+            <!-- Tags -->
+            <div class="project-tags">
+              <div class="project-tag"> Business Website </div>
+              <div class="project-tag"> WordPress Development </div>
+              <div class="project-tag"> Ecommerce Development </div>
+            </div>
+            <!-- Project Details -->
+            <div class="project-summary">
+              <!-- Name -->
+              <div class="project-details">
+                <!-- Name -->
+                <div class="project-name">
+                  <h3>Eclipse Interactive</h3>
+                  <div class="projects-techs">
+                    <div>Shopify Development </div>
+                    <div> / </div>
+                    <div> Headless </div>
+                    <div> / </div>
+                    <div> SEO optimisation </div>
+                  </div>
+                </div>
+                <!-- Icon -->
+                <div class="arrow-icon">
+                  <i class="fa-light fa-arrow-up arrow-1"></i>
+                  <i class="fa-light fa-arrow-up arrow-2"></i>
+                </div>
+              </div>
+              <!-- Small Mockups -->
+              <div class="project-small-mockups">
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-01.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-02.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-03.webp"
+                    alt="#" />
+                </div>
+                <div class="project-small-mockup">
+                  <img
+                    src="assets/media/images/project-images/project-01/mockups/mockup-04.webp"
+                    alt="#" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------- -->
+    <!-- End :: Projects Section -->
+    <!-- ----------------------- -->
+
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <!-- ######################################### -->
+    <div style="height: 300vh"></div>
+
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
     <!-- JavaScript Link -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
       integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
+
     <script src="assets/js/basic-needs.js" type="module"></script>
   </body>
 </html>

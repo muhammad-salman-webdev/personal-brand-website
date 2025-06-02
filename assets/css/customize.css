@@ -5,13 +5,16 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+}
+
+* {
     text-decoration: none;
     font-family: "Inter", sans-serif;
-    /* transition: all .3s ease; */
 }
 
 :root {
-    --black: #040404;
+      --black: #000000;
+
     --light-gray: #b9b0b0;
     --white: #fff;
 }
@@ -28,24 +31,55 @@ a {
 a,
 p {
     font-size: 18px;
+    line-height: 24px;
 }
 
 p {
     color: rgb(214, 214, 214);
-    line-height: 25px;
 }
 
 h1 {
     font-size: 72px;
     font-weight: 600;
     line-height: 86px;
+}
 
+h1,
+h2 {
     span {
         font-family: "Playfair Display", serif;
         font-style: italic;
     }
 }
 
+h1 {
+    span * {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+    }
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.color__diff {
+    color: rgba(255, 255, 255, 0.8);
+
+    span,
+    span * {
+        color: rgb(255, 255, 255);
+    }
+}
+ 
 /* Reusable Classes */
 .container {
     width: 94%;
@@ -70,4 +104,18 @@ h1 {
         font-size: 14px;
         font-weight: 600;
     }
+}
+
+/* Fullscreen overlay */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: 9999; 
 }
