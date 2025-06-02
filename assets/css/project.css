@@ -1,3 +1,14 @@
+/* 
+section {
+    --border-radius-1x: ;
+    --border-radius-2x: ;
+    --border-radius-3x: ;
+    --border-primary: 1px solid grey;
+
+    .ontainer {
+        border: var(--border-primary);
+    }
+} */
 .project-header-container {
     display: flex;
     justify-content: space-between;
@@ -28,7 +39,7 @@
 }
 
 .project-disc {
-    >p {
+    &>p {
         font-size: 12px;
         margin-bottom: 14px;
     }
