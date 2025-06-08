@@ -317,7 +317,7 @@
 /* Header */
 .header-section {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
     .header-container {
         display: flex;
@@ -353,6 +353,29 @@
 
                                 &:hover {
                                     opacity: .7;
+                                }
+                            }
+
+                            &.sub-menu {
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+
+                                .trigerer {
+                                    display: flex;
+                                }
+
+                                .sub-menu-container {
+                                    position: absolute;
+                                    top: 100px;
+                                    width: 200px;
+                                    padding: 20px;
+                                    border-radius: 10px;
+                                    background-color: white;
+
+                                    * {
+                                        color: black !important;
+                                    }
                                 }
                             }
                         }

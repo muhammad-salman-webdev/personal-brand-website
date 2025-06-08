@@ -254,8 +254,6 @@
             }
 
             .project-summary {
-                transform: translateY(120px);
-
                 .project-details {
                     display: flex;
                     justify-content: space-between;
@@ -298,25 +296,6 @@
                             &.arrow-2 {
                                 transform: translate(-40px, 40px);
                             }
-                        }
-                    }
-                }
-
-                .project-small-mockups {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    gap: 6px;
-                    margin-top: 20px;
-
-                    .project-small-mockup {
-                        width: 100%;
-                        border-radius: 8px;
-                        overflow: hidden;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
                         }
                     }
                 }

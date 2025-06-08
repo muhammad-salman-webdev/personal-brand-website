@@ -18,7 +18,7 @@ function homeWelcomeAnimation() {
   welcomeAnimationTL.from(heroTitle, {
     y: 75,
     opacity: 0,
-    duration: 1.25,
+    duration: 1,
     delay: 0.5,
     ease: "power1.out",
   });
@@ -32,7 +32,7 @@ function homeWelcomeAnimation() {
   welcomeAnimationTL.fromTo(
     split.chars,
     {
-      opacity: 0.5,
+      opacity: 0.3,
     },
     {
       y: 0,
