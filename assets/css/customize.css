@@ -13,8 +13,7 @@
 }
 
 :root {
-      --black: #000000;
-
+    --black: #000000;
     --light-gray: #b9b0b0;
     --white: #fff;
 }
@@ -79,7 +78,7 @@ h3 {
         color: rgb(255, 255, 255);
     }
 }
- 
+
 /* Reusable Classes */
 .container {
     width: 94%;
@@ -87,7 +86,7 @@ h3 {
     margin: 0 auto;
 }
 
-.title {
+.project-process-label {
     text-decoration: none;
     color: black;
     background-color: white;
@@ -117,5 +116,5 @@ h3 {
     width: 100vw;
     height: 100vh;
     background: rgb(0, 0, 0);
-    z-index: 9999; 
+    z-index: 9999;
 }

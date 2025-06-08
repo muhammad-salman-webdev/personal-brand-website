@@ -9,7 +9,7 @@ section {
         border: var(--border-primary);
     }
 } */
-.project-header-container {
+.project-intro-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -38,7 +38,7 @@ section {
     }
 }
 
-.project-disc {
+.intro-desc {
     &>p {
         font-size: 12px;
         margin-bottom: 14px;
@@ -57,7 +57,7 @@ section {
 /* ############################### */
 /*  Project Achievement Starts     */
 /* ############################### */
-.project-achievement {
+.project-achievement-container {
     display: flex;
     padding: 56px;
     border: 2px solid rgb(73, 71, 71);
@@ -65,7 +65,7 @@ section {
     border-radius: 20px;
     align-items: center;
 
-    >p {
+    &>p {
         font-size: 20px;
         font-family: sans-serif;
         font-weight: 500;
@@ -110,7 +110,7 @@ section {
 /* ###################################### */
 /*    Project Overview Section Starts     */
 /* ###################################### */
-.overview-image {
+.overview-video {
     margin-top: 50px;
     margin: 10px auto 40px;
 
@@ -129,7 +129,7 @@ section {
 /* ################################# */
 /* Project Challenge Section Starts  */
 /* ################################# */
-.project-chal-container {
+.project-challenge-container {
     .chal-content {
         margin-top: 10px;
         color: var(--white);
@@ -192,8 +192,8 @@ section {
 /* ########################## */
 /* Project Highlight Container  */
 /* ########################## */
-.project-highlight-container {
-    .highlight-grid {
+.project-grid-container {
+    .project-grid {
         display: grid;
         gap: 10px;
         grid-template-columns: auto auto auto;
@@ -238,10 +238,10 @@ section {
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
-.project-develop-container {
+.project-ourwork-container {
     margin: 100px 0;
 
-    .light-btn {
+    .title {
         margin: 0 auto;
     }
 
@@ -258,13 +258,13 @@ section {
     }
 }
 
-.develop-cards {
+.mockups-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.develop-card {
+.mockup-container {
     display: flex;
     gap: 20px;
 
@@ -310,10 +310,10 @@ section {
 /* ######################## */
 /* ######################## */
 /* ######################## */
-.approach-container {
+.project-plan-container {
     padding: 100px 70px;
 
-    .approach-title {
+    .plan-title {
         font-size: 35px;
         max-width: 390px;
         margin: 20px 0;
@@ -323,12 +323,12 @@ section {
         }
     }
 
-    .approach-cards {
+    .plan-containers {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
 
-        .approach-card {
+        .plan-container {
             border: 2px solid var(--light-gray);
             padding: 20px;
             display: flex;
@@ -381,7 +381,7 @@ section {
     background-repeat: no-repeat;
     border-radius: 12px;
 
-    >.title {
+    &>.title {
         background: var(--black);
         color: var(--white);
     }
@@ -463,11 +463,4 @@ section {
     img {
         width: 100%;
     }
-}
-
-.testi-video-button {
-    background-image: url(../media/images/testimonial-client-image.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
