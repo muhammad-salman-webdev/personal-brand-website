@@ -13,10 +13,11 @@
 }
 
 :root {
-      --black: #000000;
-
+    --black: #000000;
     --light-gray: #b9b0b0;
     --white: #fff;
+    --contrast-1: #5865f2;
+    --contrast-1: #4a68f9;
 }
 
 body {
@@ -24,12 +25,17 @@ body {
     color: white;
 }
 
+img {
+    width: 100%;
+}
+
 a {
     color: white;
 }
 
 a,
-p {
+p,
+span {
     font-size: 18px;
     line-height: 24px;
 }
@@ -49,6 +55,7 @@ h2 {
     span {
         font-family: "Playfair Display", serif;
         font-style: italic;
+        font-size: inherit;
     }
 }
 
@@ -79,7 +86,7 @@ h3 {
         color: rgb(255, 255, 255);
     }
 }
- 
+
 /* Reusable Classes */
 .container {
     width: 94%;
@@ -117,5 +124,5 @@ h3 {
     width: 100vw;
     height: 100vh;
     background: rgb(0, 0, 0);
-    z-index: 9999; 
+    z-index: 9999;
 }

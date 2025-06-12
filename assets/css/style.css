@@ -42,7 +42,8 @@
     z-index: 2;
 
     .hero-section-container {
-        min-height: calc(100dvh - 100px);
+        height: calc(100dvh - 100px);
+        min-height: min-content;
         display: flex;
         flex-direction: column;
         justify-content: center;

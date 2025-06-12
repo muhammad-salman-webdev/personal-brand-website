@@ -327,6 +327,8 @@
         .header-logo {
             width: 160px;
             display: flex;
+            position: relative;
+            z-index: 3;
 
             img {
                 width: 100%;
@@ -345,14 +347,20 @@
                     &>ul {
                         display: flex;
                         align-items: center;
-                        gap: 20px;
+                        gap: 2px;
 
                         &>li {
                             &>a {
                                 transition: all .3s ease;
+                                padding: 8px 14px;
+                                border-radius: 10px;
+                                display: block;
+                                position: relative;
+                                z-index: 3;
 
                                 &:hover {
-                                    opacity: .7;
+                                    background-color: var(--contrast-1);
+                                    transform: translateY(-4px);
                                 }
                             }
 
@@ -363,24 +371,128 @@
 
                                 .trigerer {
                                     display: flex;
+                                    align-items: center;
+                                    gap: 6px;
+                                    cursor: pointer;
+                                    border-radius: 10px;
+                                    color: white;
+                                    padding: 8px 14px;
+                                    transition: all .3s ease;
+                                    z-index: 3;
+
+                                    &:hover,
+                                    &._active {
+                                        background-color: var(--contrast-1);
+                                        transform: translateY(-4px);
+                                    }
+
+                                    span {
+                                        /* background: red; */
+                                    }
+
+                                    i {
+                                        font-size: 12px;
+                                    }
                                 }
 
                                 .sub-menu-container {
                                     position: absolute;
-                                    top: 100px;
-                                    width: 200px;
-                                    padding: 20px;
+                                    z-index: 3;
+                                    top: 35px;
+                                    /* bottom: -1px; */
+                                    /* width: 200px; */
+                                    min-width: max-content;
                                     border-radius: 10px;
-                                    background-color: white;
+                                    padding: 20px;
+                                    padding-top: 4px;
+                                    display: none;
 
-                                    * {
-                                        color: black !important;
+                                    /* background-color: rgb(69, 0, 0); */
+                                    /* background-color: green; */
+                                    .sub-menu-wrapper {
+                                        padding: 40px 50px;
+                                        background: white;
+                                        border-radius: 40px;
+                                        background-color: var(--contrast-1);
+                                        display: flex;
+                                        gap: 35px;
+
+                                        .sub-menu-list {
+                                            /* display: flex; */
+                                            min-width: min-content;
+                                            width: 125px;
+
+                                            &>div {
+                                                span {
+                                                    font-size: 13px;
+                                                    font-weight: 400;
+                                                    color: rgba(255, 255, 255, 0.5);
+                                                }
+                                            }
+
+                                            &>ul {
+                                                margin-top: 10px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 8px;
+
+                                                li {
+                                                    a {
+                                                        display: flex;
+                                                        gap: 6px;
+                                                        align-items: center;
+
+                                                        i {
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+
+                                                    a,
+                                                    a span {
+                                                        font-size: 16px;
+                                                        font-weight: 500;
+                                                        /* color: rgba(255, 255, 255, 0.9); */
+                                                        min-width: max-content;
+                                                    }
+
+                                                    a:has(i),
+                                                    a:has(i) span {
+                                                        color: rgb(255, 255, 255);
+                                                        /* font-size: 18px; */
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .sub-menu-icon {
+                                            user-select: none;
+                                            -webkit-user-drag: none;
+                                            position: absolute;
+                                            width: 125px;
+                                            right: -25px;
+                                            bottom: -50px;
+                                            /* display: none; */
+                                        }
                                     }
+                                }
+
+                                .sub-menu-overlay {
+                                    position: fixed;
+                                    inset: 0;
+                                    background-color: rgba(0, 0, 0, 0.6);
+                                    z-index: 2;
+                                    backdrop-filter: blur(5px);
+                                    display: none;
                                 }
                             }
                         }
                     }
                 }
+            }
+
+            .header-right-button {
+                position: relative;
+                z-index: 3;
             }
         }
     }
