@@ -386,10 +386,9 @@
                                         transform: translateY(-4px);
                                     }
 
-                                    span {
-                                        /* background: red; */
-                                    }
-
+                                    /* span {
+                                        background: red;
+                                    } */
                                     i {
                                         font-size: 12px;
                                     }
