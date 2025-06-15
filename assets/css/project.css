@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* 
 section {
     --border-radius-1x: ;
@@ -10,41 +11,45 @@ section {
     }
 } */
 .project-header-container {
+=======
+.project-intro-container {
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    border-radius: 12px;
     margin-bottom: 50px;
 }
 
 .project-card {
     h2 {
-        font-size: 44px;
+        font-size: 60px;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
     }
 
     .project-title {
         display: flex;
         gap: 6px;
+        line-height: 28px;
 
         span {
             background-color: var(--light-gray);
-            padding: 6px;
-            border-radius: 12px;
-            font-size: 10px;
+            padding: 4px 9px;
+            line-height: 14px;
+            border-radius: var(--border-radius);
             letter-spacing: .5px;
+            font-size: 11px;
         }
     }
 }
 
 .project-disc {
     &>p {
-        font-size: 12px;
+        font-size: var(--font-size-base);
         margin-bottom: 14px;
     }
 
-    width: 300px;
+    width: 470px;
+    font-size: var(--font-size-base);
 }
 
 /* ######################## */
@@ -57,20 +62,30 @@ section {
 /* ############################### */
 /*  Project Achievement Starts     */
 /* ############################### */
+<<<<<<< Updated upstream
 .project-achievement {
+=======
+.achievement-container {
+>>>>>>> Stashed changes
     display: flex;
     padding: 56px;
-    border: 2px solid rgb(73, 71, 71);
+    border: var(--border);
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     align-items: center;
 
+<<<<<<< Updated upstream
     >p {
         font-size: 20px;
+=======
+    &>p {
+        max-width: 260px;
+>>>>>>> Stashed changes
         font-family: sans-serif;
         font-weight: 500;
         color: var(--light-gray);
-        font-size: 20px;
+        font-size: 28px;
+        line-height: 28px;
 
         span {
             color: var(--white);
@@ -83,16 +98,18 @@ section {
     gap: 50px;
 
     .item {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
         :nth-child(1) {
-            font-size: 35px;
+            font-size: 50px;
             font-weight: 500;
             color: var(--white);
         }
 
         :nth-child(2) {
-            font-size: 10px;
+            font-size: var(--font-size-small);
             font-weight: 400;
             color: var(--light-gray);
         }
@@ -106,16 +123,28 @@ section {
 /* ###################################### */
 /* ###################################### */
 /* ###################################### */
-/* ###################################### */
-/* ###################################### */
 /*    Project Overview Section Starts     */
 /* ###################################### */
+<<<<<<< Updated upstream
 .overview-image {
     margin-top: 50px;
     margin: 10px auto 40px;
+=======
+.project-overview-container {
+    width: 100%;
+    height: 100%;
+>>>>>>> Stashed changes
 
-    img {
+    .overview-video {
+        margin: 16px auto 126px;
         width: 100%;
+        height: 600px;
+        overflow: hidden;
+        border-radius: var(--border-radius);
+
+        img {
+            scale: 1.1;
+        }
     }
 }
 
@@ -129,13 +158,26 @@ section {
 /* ################################# */
 /* Project Challenge Section Starts  */
 /* ################################# */
+<<<<<<< Updated upstream
 .project-chal-container {
     .chal-content {
+=======
+.project-challenge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 54px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    .challenge-content {
+>>>>>>> Stashed changes
         margin-top: 10px;
         color: var(--white);
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 500;
-        max-width: 570px;
+        max-width: 814px;
+        line-height: 34px;
 
         span {
             color: var(--light-gray);
@@ -149,32 +191,30 @@ section {
     margin-top: 34px;
 
     .indus-tags-box {
-        font-size: 12px;
         font-weight: 500;
 
         >p {
-            font-size: 12px;
             font-weight: 500;
             margin-bottom: 4px;
         }
 
         .indus-tags {
+            font-size: var(--font-size-base);
             display: flex;
             gap: 6px;
         }
     }
 
     .service-tags-box {
-        font-size: 12px;
         font-weight: 500;
 
         >p {
-            font-size: 12px;
             font-weight: 500;
             margin-bottom: 4px;
         }
 
         .service-tags {
+            font-size: var(--font-size-base);
             display: flex;
             gap: 6px;
         }
@@ -192,38 +232,24 @@ section {
 /* ########################## */
 /* Project Highlight Container  */
 /* ########################## */
+<<<<<<< Updated upstream
 .project-highlight-container {
     .highlight-grid {
         display: grid;
         gap: 10px;
         grid-template-columns: auto auto auto;
         margin: 70px auto 100px;
+=======
+.project-grid-container {
+    .project-grid-image {
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+>>>>>>> Stashed changes
 
         img {
-            border-radius: 12px;
-            object-fit: cover;
-
-            &:nth-child(1) {}
-
-            &:nth-child(2) {}
-
-            &:nth-child(3) {}
-
-            &:nth-child(4) {}
-
-            &:nth-child(5) {}
-
-            &:nth-child(6) {}
-
-            &:nth-child(7) {}
-
-            &:nth-child(8) {
-                width: 300px;
-            }
-
-            &:nth-child(9) {
-                width: 300px;
-            }
+            width: 100%;
+            border-radius: var(--border-radius);
         }
     }
 }
@@ -238,22 +264,31 @@ section {
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
+<<<<<<< Updated upstream
 .project-develop-container {
     margin: 100px 0;
+=======
+.project-ourwork-container {
+    padding: 160px 0 0;
+
+    span {
+        margin: 0 auto;
+    }
+>>>>>>> Stashed changes
 
     .light-btn {
         margin: 0 auto;
     }
 
     .work-content {
-        margin: 0 auto;
         text-align: center;
-        margin: 10px auto;
-        max-width: 590px;
-        font-size: 20px;
+        margin: 20px auto 50px;
+        max-width: 770px;
+        font-size: 28px;
+        line-height: 34px;
 
         span {
-            color: var(--white);
+            color: var(--light-gray);
         }
     }
 }
@@ -277,21 +312,21 @@ section {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        border: 1px solid #dfe0e4;
+        border: var(--border);
         max-width: 35%;
-        border-radius: 12px;
+        border-radius: var(--border-radius);
         padding: 20px;
 
         h2 {
-            font-size: 20px;
+            font-size: 28px;
             font-weight: 500;
         }
 
         p {
             font-weight: 500;
-            font-size: 12px;
             color: var(--light-gray);
-            line-height: 15px;
+            line-height: 18px;
+            font-size: var(--font-size-base);
         }
     }
 
@@ -299,7 +334,7 @@ section {
         width: 100%;
 
         img {
-            border-radius: 12px;
+            border-radius: var(--border-radius);
             width: 100%;
         }
     }
@@ -310,16 +345,26 @@ section {
 /* ######################## */
 /* ######################## */
 /* ######################## */
+<<<<<<< Updated upstream
 .approach-container {
     padding: 100px 70px;
 
     .approach-title {
         font-size: 35px;
         max-width: 390px;
+=======
+.project-plan-container {
+    padding: 100px 70px 90px;
+
+    .plan-title {
+        font-size: 50px;
+        max-width: 540px;
+>>>>>>> Stashed changes
         margin: 20px 0;
 
-        span {
+        i {
             color: var(--light-gray);
+            font-size: 34px;
         }
     }
 
@@ -328,24 +373,57 @@ section {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
 
+<<<<<<< Updated upstream
         .approach-card {
             border: 2px solid var(--light-gray);
+=======
+        .plan-container {
+            border: var(--border);
+>>>>>>> Stashed changes
             padding: 20px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
             gap: 30px;
-            border-radius: 12px;
+            border-radius: var(--border-radius);
 
             p {
                 color: var(--white);
                 line-height: 16px;
-                font-size: 12px;
+                font-size: var(--font-size-base);
+                line-height: 20px;
             }
 
             span {
                 color: var(--light-gray);
             }
+        }
+    }
+}
+
+.experience-container {
+    padding: 30px 0 80px;
+    position: relative;
+
+    .experience-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0 140px;
+
+        >p {
+            color: black;
+            font-size: 28px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--border-radius);
         }
     }
 }
@@ -356,8 +434,10 @@ section {
 /* #############################3  */
 /* #############################3  */
 .shopify-image {
+    padding: 90px 0;
     width: 100%;
     height: 100%;
+    border-radius: var(--border-radius);
 
     img {
         width: 100%;
@@ -372,14 +452,16 @@ section {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 100px 50px;
+    height: 50vh;
+    margin: 90px 0;
+    justify-content: space-between;
     padding: 40px;
     background: var(--white);
-    background-image: url(../media/images/background-image.webp);
+    background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
 
     >.title {
         background: var(--black);
@@ -387,10 +469,11 @@ section {
     }
 
     p {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 500;
-        max-width: 530px;
+        max-width: 730px;
         color: var(--light-gray);
+        line-height: 34px;
 
         span {
             color: var(--black);
@@ -403,9 +486,8 @@ section {
 /* ##########################  */
 /* ##########################  */
 .testi-container {
-    margin: 70px 0;
+    padding: 70px 0;
 
-    /* margin: 0 auto; */
     span {
         margin: 0 auto;
     }
@@ -414,8 +496,8 @@ section {
         text-align: center;
         margin: 0 auto;
         max-width: 760px;
-        font-size: 34px;
-        padding: 20px 0;
+        font-size: 38px;
+        padding: 26px 0;
 
         span {
             color: var(--light-gray);
@@ -444,22 +526,24 @@ section {
         display: flex;
         flex-direction: column;
 
-        h3 {
+        >h3 {
             font-size: 26px;
             margin-bottom: 6px;
         }
 
-        .profile-desc {
+        >p {
             font-size: 14px;
             color: var(--light-gray);
         }
     }
 }
 
-.testi-client-image {
-    border-radius: 12px;
-    width: 100px;
+.result-title {
+    background-color: var(--black);
+    color: var(--white);
+}
 
+<<<<<<< Updated upstream
     img {
         width: 100%;
     }
@@ -471,3 +555,8 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
 }
+=======
+/* ########################### */
+/* ########################### */
+/* ########################### */
+>>>>>>> Stashed changes

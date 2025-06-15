@@ -12,11 +12,22 @@
     font-family: "Inter", sans-serif;
 }
 
+video,
+img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
 :root {
       --black: #000000;
 
     --light-gray: #b9b0b0;
+    --light-gray: gray;
     --white: #fff;
+    --border-radius: 20px;
+    --font-size-small: 14px;
+    --font-size-base: 16px;
+    --border: 1px solid #333030;
 }
 
 body {
@@ -32,10 +43,6 @@ a,
 p {
     font-size: 18px;
     line-height: 24px;
-}
-
-p {
-    color: rgb(214, 214, 214);
 }
 
 h1 {
@@ -85,19 +92,20 @@ h3 {
     width: 94%;
     max-width: 1248px;
     margin: 0 auto;
+    padding: 80px 0;
 }
 
 .title {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 4px 12px;
+    padding: 4px 9px;
     display: flex;
-    font-size: 10px;
+    font-size: 14px;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     width: fit-content;
-    border-radius: 6px;
+    border-radius: 8px;
 
     p {
         color: black;
