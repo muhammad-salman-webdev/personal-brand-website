@@ -1,19 +1,4 @@
-<<<<<<< Updated upstream
-/* 
-section {
-    --border-radius-1x: ;
-    --border-radius-2x: ;
-    --border-radius-3x: ;
-    --border-primary: 1px solid grey;
-
-    .ontainer {
-        border: var(--border-primary);
-    }
-} */
-.project-header-container {
-=======
 .project-intro-container {
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -42,7 +27,7 @@ section {
     }
 }
 
-.project-disc {
+.intro-desc {
     &>p {
         font-size: var(--font-size-base);
         margin-bottom: 14px;
@@ -62,11 +47,7 @@ section {
 /* ############################### */
 /*  Project Achievement Starts     */
 /* ############################### */
-<<<<<<< Updated upstream
-.project-achievement {
-=======
 .achievement-container {
->>>>>>> Stashed changes
     display: flex;
     padding: 56px;
     border: var(--border);
@@ -74,13 +55,8 @@ section {
     border-radius: var(--border-radius);
     align-items: center;
 
-<<<<<<< Updated upstream
-    >p {
-        font-size: 20px;
-=======
     &>p {
         max-width: 260px;
->>>>>>> Stashed changes
         font-family: sans-serif;
         font-weight: 500;
         color: var(--light-gray);
@@ -125,15 +101,9 @@ section {
 /* ###################################### */
 /*    Project Overview Section Starts     */
 /* ###################################### */
-<<<<<<< Updated upstream
-.overview-image {
-    margin-top: 50px;
-    margin: 10px auto 40px;
-=======
 .project-overview-container {
     width: 100%;
     height: 100%;
->>>>>>> Stashed changes
 
     .overview-video {
         margin: 16px auto 126px;
@@ -158,10 +128,6 @@ section {
 /* ################################# */
 /* Project Challenge Section Starts  */
 /* ################################# */
-<<<<<<< Updated upstream
-.project-chal-container {
-    .chal-content {
-=======
 .project-challenge-container {
     display: flex;
     flex-direction: column;
@@ -171,7 +137,6 @@ section {
     border-radius: var(--border-radius);
 
     .challenge-content {
->>>>>>> Stashed changes
         margin-top: 10px;
         color: var(--white);
         font-size: 28px;
@@ -232,20 +197,11 @@ section {
 /* ########################## */
 /* Project Highlight Container  */
 /* ########################## */
-<<<<<<< Updated upstream
-.project-highlight-container {
-    .highlight-grid {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: auto auto auto;
-        margin: 70px auto 100px;
-=======
 .project-grid-container {
     .project-grid-image {
         margin-top: 100px;
         width: 100%;
         height: 100%;
->>>>>>> Stashed changes
 
         img {
             width: 100%;
@@ -264,19 +220,14 @@ section {
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
-<<<<<<< Updated upstream
-.project-develop-container {
-    margin: 100px 0;
-=======
 .project-ourwork-container {
     padding: 160px 0 0;
 
     span {
         margin: 0 auto;
     }
->>>>>>> Stashed changes
 
-    .light-btn {
+    .title {
         margin: 0 auto;
     }
 
@@ -293,13 +244,13 @@ section {
     }
 }
 
-.develop-cards {
+.mockups-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.develop-card {
+.mockup-container {
     display: flex;
     gap: 20px;
 
@@ -345,21 +296,12 @@ section {
 /* ######################## */
 /* ######################## */
 /* ######################## */
-<<<<<<< Updated upstream
-.approach-container {
-    padding: 100px 70px;
-
-    .approach-title {
-        font-size: 35px;
-        max-width: 390px;
-=======
 .project-plan-container {
     padding: 100px 70px 90px;
 
     .plan-title {
         font-size: 50px;
         max-width: 540px;
->>>>>>> Stashed changes
         margin: 20px 0;
 
         i {
@@ -368,18 +310,13 @@ section {
         }
     }
 
-    .approach-cards {
+    .plan-containers {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
 
-<<<<<<< Updated upstream
-        .approach-card {
-            border: 2px solid var(--light-gray);
-=======
         .plan-container {
             border: var(--border);
->>>>>>> Stashed changes
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -463,7 +400,7 @@ section {
     background-repeat: no-repeat;
     border-radius: var(--border-radius);
 
-    >.title {
+    &>.title {
         background: var(--black);
         color: var(--white);
     }
@@ -478,6 +415,11 @@ section {
         span {
             color: var(--black);
         }
+    }
+
+    .result-title {
+        background-color: var(--black);
+        color: var(--white);
     }
 }
 
@@ -538,25 +480,6 @@ section {
     }
 }
 
-.result-title {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-<<<<<<< Updated upstream
-    img {
-        width: 100%;
-    }
-}
-
-.testi-video-button {
-    background-image: url(../media/images/testimonial-client-image.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-=======
 /* ########################### */
 /* ########################### */
 /* ########################### */
->>>>>>> Stashed changes
