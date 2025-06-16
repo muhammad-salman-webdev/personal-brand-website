@@ -456,6 +456,16 @@ section {
     }
 }
 
+.result-title {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.result-title {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .testi-client-image {
     border-radius: 12px;
     width: 100px;
