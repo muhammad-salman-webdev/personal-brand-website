@@ -16,6 +16,11 @@
     --black: #000000;
     --light-gray: #b9b0b0;
     --white: #fff;
+    --fs-base: 16px;
+    --fs-small: 14px;
+    --fs-large: 28px;
+    --gray: gray;
+    --border-radius: 20px;
 }
 
 body {
