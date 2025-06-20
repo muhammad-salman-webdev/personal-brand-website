@@ -95,13 +95,15 @@ h3 {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 4px 12px;
+    padding: 2px 8px;
     display: flex;
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
     align-items: center;
     gap: 8px;
     width: fit-content;
-    border-radius: 6px;
+    border-radius: 9px;
 
     p {
         color: black;
