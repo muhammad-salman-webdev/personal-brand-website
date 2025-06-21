@@ -18,10 +18,10 @@
         gap: 6px;
 
         span {
-            background-color: var(--light-gray);
-            padding: 6px;
+            background-color: #666666;
+            padding: 4px 8px;
             border-radius: 12px;
-            font-size: 10px;
+            font-size: 11px;
             letter-spacing: .5px;
         }
     }
@@ -36,6 +36,15 @@
         font-size: 14px;
         margin-bottom: 14px;
         line-height: 16px;
+        color: white;
+    }
+
+    .project-process-label {
+        a {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -62,8 +71,7 @@
         line-height: 30px;
         font-family: sans-serif;
         font-weight: 500;
-        color: var(--light-gray);
-        font-size: 20px;
+        color: var(--gray);
 
         span {
             color: var(--white);
@@ -119,17 +127,6 @@
     border-radius: var(--border-radius);
     padding: 56px;
 
-    >span {
-        padding: 2px 4px;
-
-        >p {
-            color: black;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 18px;
-        }
-    }
-
     .chal-content {
         margin: 18px 0 54px;
         color: var(--white);
@@ -139,7 +136,7 @@
         max-width: 790px;
 
         span {
-            color: var(--light-gray);
+            color: var(--gray);
             line-height: 20px;
 
             p {
@@ -218,19 +215,23 @@
 /* ############################# */
 /* ############################# */
 /* ############################# */
+.project-exper-video {
+    width: 100%;
+
+    video {
+        width: 100%;
+    }
+}
+
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
 .project-ourwork-container {
     margin: 100px 0;
+    padding-top: 100px;
 
     .ourwork-title {
         margin: 0 auto;
-        font-size: 13px;
-        padding: 2px 8px;
-        line-height: 21px;
-        font-weight: 500;
-        border-radius: 9px;
     }
 
     .work-content {
@@ -280,7 +281,7 @@
         p {
             font-weight: 500;
             font-size: 16px;
-            color: var(--light-gray);
+            color: var(--gray);
             line-height: 22px;
         }
     }
@@ -321,7 +322,7 @@
         gap: 16px;
 
         .plan-container {
-            border: 2px solid var(--light-gray);
+            border: 2px solid var(--gray);
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -337,7 +338,7 @@
             }
 
             span {
-                color: var(--light-gray);
+                color: var(--gray);
             }
         }
     }
@@ -388,7 +389,7 @@
         line-height: 26px;
         max-width: 735px;
         margin-bottom: 30px;
-        color: var(--light-gray);
+        color: var(--gray);
 
         span {
             color: var(--black);
@@ -418,7 +419,7 @@
         line-height: 38px;
 
         span {
-            color: var(--light-gray);
+            color: var(--gray);
         }
     }
 }
@@ -451,7 +452,7 @@
 
         p {
             font-size: 16px;
-            color: var(--light-gray);
+            color: var(--gray);
         }
     }
 }

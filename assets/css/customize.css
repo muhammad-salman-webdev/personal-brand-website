@@ -104,12 +104,12 @@ h3 {
     gap: 8px;
     width: fit-content;
     border-radius: 9px;
-
-    p {
+    /* 
+    a {
         color: black;
         font-size: 14px;
         font-weight: 600;
-    }
+    } */
 }
 
 /* Fullscreen overlay */
