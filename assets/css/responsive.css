@@ -1,0 +1,67 @@
+@media (max-width:1020px) {
+    .header-section {
+        .header-container {
+            .header-logo {
+                img {}
+            }
+
+            .header-nav-container {
+                .nav-container {
+                    display: none;
+
+                    &>nav {
+                        &>ul {
+                            &>li {
+                                &>a {
+                                    &:hover {}
+                                }
+
+                                &.sub-menu {
+                                    .trigerer {
+
+                                        &:hover,
+                                        &._active {}
+
+                                        span {}
+
+                                        i {}
+                                    }
+
+                                    .sub-menu-container {
+                                        .sub-menu-wrapper {
+                                            .sub-menu-list {
+                                                &>div {
+                                                    span {}
+                                                }
+
+                                                &>ul {
+                                                    li {
+                                                        a {
+                                                            i {}
+                                                        }
+
+                                                        a,
+                                                        a span {}
+
+                                                        a:has(i),
+                                                        a:has(i) span {}
+                                                    }
+                                                }
+                                            }
+
+                                            .sub-menu-icon {}
+                                        }
+                                    }
+
+                                    .sub-menu-overlay {}
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-right-button {}
+            }
+        }
+    }
+}
