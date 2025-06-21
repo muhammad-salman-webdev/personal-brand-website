@@ -1,5 +1,5 @@
 @import url('../fonts/fonts.css');
-@import url('./customize.css');
+@import url('./basics.css');
 @import url('./components.css');
 
 @keyframes color {
