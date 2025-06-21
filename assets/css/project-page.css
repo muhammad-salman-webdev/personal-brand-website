@@ -19,9 +19,10 @@
 
         span {
             background-color: #666666;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 25px;
+            font-size: 12px;
+            line-height: 19px;
             letter-spacing: .5px;
         }
     }
@@ -35,7 +36,7 @@
     &>p {
         font-size: 14px;
         margin-bottom: 14px;
-        line-height: 16px;
+        line-height: 18px;
         color: white;
     }
 
@@ -74,6 +75,7 @@
         color: var(--gray);
 
         span {
+            font-size: 28px;
             color: var(--white);
         }
     }
@@ -131,11 +133,12 @@
         margin: 18px 0 54px;
         color: var(--white);
         font-size: 28px;
-        line-height: 30px;
+        line-height: 34px;
         font-weight: 500;
         max-width: 790px;
 
         span {
+            font-size: 28px;
             color: var(--gray);
             line-height: 20px;
 
@@ -217,9 +220,44 @@
 /* ############################# */
 .project-exper-video {
     width: 100%;
+    position: relative;
+
+    .exper-heading {
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 56px 0 122px;
+        height: 100%;
+
+        >span {
+            color: black;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            gap: 34px;
+            align-items: center;
+            padding: 10px 18px;
+
+            i {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
 
     video {
         width: 100%;
+        border-radius: 22px;
     }
 }
 
@@ -227,7 +265,7 @@
 /* Project Development Container  */
 /* ############################### */
 .project-ourwork-container {
-    margin: 100px 0;
+    margin: 100px 0 20px;
     padding-top: 100px;
 
     .ourwork-title {
@@ -243,6 +281,7 @@
         line-height: 32px;
 
         span {
+            font-size: 28px;
             color: var(--gray);
         }
     }
@@ -308,7 +347,6 @@
         font-size: 50px;
         font-weight: 500;
         line-height: 60px;
-        max-width: 540px;
         margin: 20px 0;
 
         i {
@@ -386,12 +424,13 @@
     p {
         font-size: 28px;
         font-weight: 500;
-        line-height: 26px;
+        line-height: 32px;
         max-width: 735px;
         margin-bottom: 30px;
         color: var(--gray);
 
         span {
+            font-size: 28px;
             color: var(--black);
         }
     }
@@ -419,6 +458,7 @@
         line-height: 38px;
 
         span {
+            font-size: 38px;
             color: var(--gray);
         }
     }
