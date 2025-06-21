@@ -1,76 +1,77 @@
-/* 
-section {
-    --border-radius-1x: ;
-    --border-radius-2x: ;
-    --border-radius-3x: ;
-    --border-primary: 1px solid grey;
-
-    .ontainer {
-        border: var(--border-primary);
-    }
-} */
-.project-header-container {
+.project-intro-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 50px;
+    margin: 40px 0;
 }
 
 .project-card {
     h2 {
-        font-size: 44px;
+        font-size: 60px;
         font-weight: 500;
         margin-bottom: 10px;
     }
 
-    .project-title {
+    .intro-title {
         display: flex;
         gap: 6px;
 
         span {
-            background-color: var(--light-gray);
-            padding: 6px;
+            background-color: #666666;
+            padding: 4px 8px;
             border-radius: 12px;
-            font-size: 10px;
+            font-size: 11px;
             letter-spacing: .5px;
         }
     }
 }
 
-.project-disc {
+.intro-desc {
+    margin-top: auto;
+    width: 440px;
+    margin-right: 100px;
+
     &>p {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 14px;
+        line-height: 16px;
+        color: white;
     }
 
-    width: 300px;
+    .project-process-label {
+        a {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }
 
-/* ######################## */
-/*  Project Heading Ends    */
-/* ######################## */
+/* -------------------------------- */
+/*  Project Intro Container Ends    */
+/* -------------------------------- */
 /* ############################### */
 /* ############################### */
 /* ############################### */
 /* ############################### */
-/* ############################### */
-/*  Project Achievement Starts     */
-/* ############################### */
-.project-achievement {
+/* ------------------------------- */
+/*  Project  Overview  Starts      */
+/* ------------------------------- */
+.overview-container {
     display: flex;
     padding: 56px;
-    border: 2px solid rgb(73, 71, 71);
+    border: 1px solid gray;
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
 
-    >p {
-        font-size: 20px;
+    &>p {
+        font-size: 28px;
+        line-height: 30px;
         font-family: sans-serif;
         font-weight: 500;
-        color: var(--light-gray);
-        font-size: 20px;
+        color: var(--gray);
 
         span {
             color: var(--white);
@@ -78,67 +79,73 @@ section {
     }
 }
 
-.acheivement-list {
+.overview-list {
     display: flex;
     gap: 50px;
 
-    .item {
-        text-align: center;
-
+    .overview-item {
         :nth-child(1) {
-            font-size: 35px;
+            font-size: 50px;
             font-weight: 500;
             color: var(--white);
+            line-height: 50px;
         }
 
         :nth-child(2) {
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 400;
-            color: var(--light-gray);
+            color: var(--gray);
         }
     }
 }
 
-/* ############################### */
-/*  Project Achievement   Ends     */
-/* ############################### */
-/* ###################################### */
-/* ###################################### */
-/* ###################################### */
-/* ###################################### */
-/* ###################################### */
-/* ###################################### */
-/*    Project Overview Section Starts     */
-/* ###################################### */
-.overview-image {
+.overview-video {
     margin-top: 50px;
-    margin: 10px auto 40px;
+    margin: 10px auto 90px;
+    width: 100%;
+    height: 100%;
 
-    img {
+    video {
         width: 100%;
+        height: 100%;
+        border-radius: 12px;
     }
 }
 
-/* ################################### */
+/* ------------------------------------ */
 /*    Project Overview Section Ends     */
-/* #################################### */
+/* ----------------------------------- */
 /* ###################################### */
 /* ###################################### */
 /* ###################################### */
 /* ###################################### */
-/* ################################# */
+/* --------------------------------- */
 /* Project Challenge Section Starts  */
-/* ################################# */
-.project-chal-container {
+/* --------------------------------- */
+.project-challenge-container {
+    border: 1px solid gray;
+    border-radius: var(--border-radius);
+    padding: 56px;
+
     .chal-content {
-        margin-top: 10px;
+        margin: 18px 0 54px;
         color: var(--white);
-        font-size: 20px;
+        font-size: 28px;
+        line-height: 30px;
         font-weight: 500;
-        max-width: 570px;
+        max-width: 790px;
 
         span {
-            color: var(--light-gray);
+            color: var(--gray);
+            line-height: 20px;
+
+            p {
+                line-height: 12px;
+                color: black;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 0px 0px;
+            }
         }
     }
 }
@@ -146,14 +153,13 @@ section {
 .chal-Tags-wrapper {
     display: flex;
     gap: 30px;
-    margin-top: 34px;
 
     .indus-tags-box {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
 
         >p {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 500;
             margin-bottom: 4px;
         }
@@ -165,11 +171,11 @@ section {
     }
 
     .service-tags-box {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
 
         >p {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 500;
             margin-bottom: 4px;
         }
@@ -181,90 +187,74 @@ section {
     }
 }
 
-/* ############################### */
+/* ------------------------------- */
 /* Project Challenge Section Ends  */
-/* ############################### */
+/* ------------------------------- */
 /* ############################ */
 /* ############################ */
 /* ############################ */
 /* ############################ */
 /* ############################ */
-/* ########################## */
-/* Project Highlight Container  */
-/* ########################## */
-.project-highlight-container {
-    .highlight-grid {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: auto auto auto;
-        margin: 70px auto 100px;
+/* --------------------------- */
+/* START ::Project Layout Image */
+/* --------------------------- */
+.project-layout-image {
+    margin: 96px 0;
+    width: 100%;
+    height: 100%;
 
-        img {
-            border-radius: 12px;
-            object-fit: cover;
-
-            &:nth-child(1) {}
-
-            &:nth-child(2) {}
-
-            &:nth-child(3) {}
-
-            &:nth-child(4) {}
-
-            &:nth-child(5) {}
-
-            &:nth-child(6) {}
-
-            &:nth-child(7) {}
-
-            &:nth-child(8) {
-                width: 300px;
-            }
-
-            &:nth-child(9) {
-                width: 300px;
-            }
-        }
+    img {
+        width: 100%;
     }
 }
 
-/* ########################## */
-/* Project Highlight Container  */
-/* ########################## */
+/* ------------------------- */
+/* END::Project Layout Image */
+/* ------------------------ */
 /* ############################# */
 /* ############################# */
 /* ############################# */
 /* ############################# */
+.project-exper-video {
+    width: 100%;
+
+    video {
+        width: 100%;
+    }
+}
+
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
-.project-develop-container {
+.project-ourwork-container {
     margin: 100px 0;
+    padding-top: 100px;
 
-    .light-btn {
+    .ourwork-title {
         margin: 0 auto;
     }
 
     .work-content {
-        margin: 0 auto;
         text-align: center;
-        margin: 10px auto;
-        max-width: 590px;
-        font-size: 20px;
+        margin: 24px auto 46px;
+        max-width: 782px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
 
         span {
-            color: var(--white);
+            color: var(--gray);
         }
     }
 }
 
-.develop-cards {
+.mockups-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.develop-card {
+.mockup-container {
     display: flex;
     gap: 20px;
 
@@ -273,7 +263,7 @@ section {
         flex-direction: row-reverse;
     }
 
-    .develop-content {
+    .mockup-content {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -283,19 +273,20 @@ section {
         padding: 20px;
 
         h2 {
-            font-size: 20px;
+            font-size: 28px;
             font-weight: 500;
+            line-height: 30px;
         }
 
         p {
             font-weight: 500;
-            font-size: 12px;
-            color: var(--light-gray);
-            line-height: 15px;
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 22px;
         }
     }
 
-    .develop-image {
+    .mockup-image {
         width: 100%;
 
         img {
@@ -310,26 +301,28 @@ section {
 /* ######################## */
 /* ######################## */
 /* ######################## */
-.approach-container {
+.project-plan-container {
     padding: 100px 70px;
 
-    .approach-title {
-        font-size: 35px;
-        max-width: 390px;
+    .plan-title {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        max-width: 540px;
         margin: 20px 0;
 
-        span {
-            color: var(--light-gray);
+        i {
+            color: var(--gray);
         }
     }
 
-    .approach-cards {
+    .plan-containers {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
 
-        .approach-card {
-            border: 2px solid var(--light-gray);
+        .plan-container {
+            border: 2px solid var(--gray);
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -339,12 +332,13 @@ section {
 
             p {
                 color: var(--white);
-                line-height: 16px;
-                font-size: 12px;
+                line-height: 21px;
+                font-size: 16px;
+                font-weight: 500;
             }
 
             span {
-                color: var(--light-gray);
+                color: var(--gray);
             }
         }
     }
@@ -371,26 +365,31 @@ section {
 .result-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 100px 50px;
+    justify-content: space-between;
+    margin: 100px 0;
     padding: 40px;
     background: var(--white);
-    background-image: url(../media/images/background-image.webp);
+    background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 12px;
+    height: 516px;
 
-    >.title {
+    &>.result-title {
         background: var(--black);
         color: var(--white);
+        padding: 4px 9px;
+        font-size: 14px;
     }
 
     p {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 500;
-        max-width: 530px;
-        color: var(--light-gray);
+        line-height: 26px;
+        max-width: 735px;
+        margin-bottom: 30px;
+        color: var(--gray);
 
         span {
             color: var(--black);
@@ -404,21 +403,23 @@ section {
 /* ##########################  */
 .testi-container {
     margin: 70px 0;
+    text-align: center;
 
-    /* margin: 0 auto; */
-    span {
+    >span {
         margin: 0 auto;
     }
 
     .testi-content {
         text-align: center;
-        margin: 0 auto;
-        max-width: 760px;
-        font-size: 34px;
+        margin: 14px auto 34px;
+        max-width: 770px;
+        font-size: 38px;
         padding: 20px 0;
+        font-weight: 500;
+        line-height: 38px;
 
         span {
-            color: var(--light-gray);
+            color: var(--gray);
         }
     }
 }
@@ -426,48 +427,32 @@ section {
 .testi-profile {
     margin: 0 auto;
     display: flex;
-    gap: 10px;
+    gap: 14px;
     width: 100%;
     align-items: center;
     justify-content: center;
 
     .profile-image {
-        width: 50px;
+        width: 58px;
 
         img {
             width: 100%;
         }
     }
 
-    .profile-detail {
-        justify-content: center;
+    .profile-title {
         display: flex;
         flex-direction: column;
+        text-align: start;
 
         h3 {
-            font-size: 26px;
-            margin-bottom: 6px;
+            font-size: 28px;
+            line-height: 34px;
         }
 
-        .profile-desc {
-            font-size: 14px;
-            color: var(--light-gray);
+        p {
+            font-size: 16px;
+            color: var(--gray);
         }
     }
-}
-
-.testi-client-image {
-    border-radius: 12px;
-    width: 100px;
-
-    img {
-        width: 100%;
-    }
-}
-
-.testi-video-button {
-    background-image: url(../media/images/testimonial-client-image.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }

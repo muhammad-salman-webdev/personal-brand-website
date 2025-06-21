@@ -18,6 +18,11 @@
     --white: #fff;
     --contrast-1: #5865f2;
     --contrast-1: #4a68f9;
+    --fs-base: 16px;
+    --fs-small: 14px;
+    --fs-large: 28px;
+    --gray: gray;
+    --border-radius: 20px;
 }
 
 body {
@@ -94,23 +99,25 @@ h3 {
     margin: 0 auto;
 }
 
-.title {
+.project-process-label {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 4px 12px;
+    padding: 2px 8px;
     display: flex;
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
     align-items: center;
     gap: 8px;
     width: fit-content;
-    border-radius: 6px;
-
-    p {
+    border-radius: 9px;
+    /* 
+    a {
         color: black;
         font-size: 14px;
         font-weight: 600;
-    }
+    } */
 }
 
 /* Fullscreen overlay */
