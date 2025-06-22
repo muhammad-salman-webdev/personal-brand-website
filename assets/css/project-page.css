@@ -103,7 +103,7 @@
 
 .overview-video {
     margin-top: 50px;
-    margin: 10px auto 90px;
+    margin: 20px auto 90px;
     width: 100%;
     height: 100%;
 
@@ -202,7 +202,7 @@
 /* START ::Project Layout Image */
 /* --------------------------- */
 .project-layout-image {
-    margin: 96px 0;
+    margin-top: 20px;
     width: 100%;
     height: 100%;
 
@@ -266,7 +266,6 @@
 /* ############################### */
 .project-ourwork-container {
     margin: 100px 0 20px;
-    padding-top: 100px;
 
     .ourwork-title {
         margin: 0 auto;
