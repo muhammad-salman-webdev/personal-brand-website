@@ -39,14 +39,6 @@
         line-height: 18px;
         color: white;
     }
-
-    .project-process-label {
-        a {
-            color: black;
-            font-size: 14px;
-            font-weight: 600;
-        }
-    }
 }
 
 /* -------------------------------- */

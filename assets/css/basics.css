@@ -113,12 +113,25 @@ h3 {
     gap: 8px;
     width: fit-content;
     border-radius: 9px;
+
     /* 
     a {
         color: black;
         font-size: 14px;
         font-weight: 600;
     } */
+    &._dark {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    &._link {
+        span {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }
 
 /* Fullscreen overlay */
