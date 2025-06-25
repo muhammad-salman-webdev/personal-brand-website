@@ -366,11 +366,11 @@
     margin: 70px 0;
     text-align: center;
 
-    >h2 {
+    &>h2 {
         margin: 0 auto;
     }
 
-    >p {
+    &>p {
         text-align: center;
         margin: 14px auto 34px;
         max-width: 770px;
