@@ -239,13 +239,6 @@
         max-width: 35%;
         border-radius: 12px;
         padding: 20px;
-
-        p {
-            font-weight: 500;
-            font-size: 16px;
-            color: var(--gray);
-            line-height: 22px;
-        }
     }
 
     .mockup-image {
@@ -373,23 +366,15 @@
     margin: 70px 0;
     text-align: center;
 
-    >span {
+    >h2 {
         margin: 0 auto;
     }
 
-    .testi-content {
+    >p {
         text-align: center;
         margin: 14px auto 34px;
         max-width: 770px;
-        font-size: 38px;
         padding: 20px 0;
-        font-weight: 500;
-        line-height: 38px;
-
-        span {
-            font-size: 38px;
-            color: var(--gray);
-        }
     }
 }
 
