@@ -134,6 +134,77 @@ h3 {
     }
 }
 
+/* Heading Medium  */
+.heading-sm {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* Heading Medium  */
+.heading-md {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+/* Heading Medium  */
+.heading-lg {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 62px;
+}
+
+/* Fade Text Small  */
+.text-fade-sm {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+/* Fade Text medium  */
+.text-fade-md {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+
+    span {
+        color: var(--gray);
+        font-size: 28px;
+    }
+}
+
+/* Fade Text large  */
+.text-fade-lg {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+/* Text Small  */
+.text-small {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+/* Text Medium  */
+.text-medium {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    line-height: 21px;
+}
+
+/* Text Large  */
+.text-large {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+}
+
 /* Fullscreen overlay */
 #preloader {
     position: fixed;

@@ -4,40 +4,35 @@
     padding: 20px;
     border-radius: 12px;
     margin: 40px 0;
-}
 
-.project-card {
-    h2 {
-        font-size: 60px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
+    .project-card {
+        h1 {
+            margin-bottom: 10px;
+        }
 
-    .intro-title {
-        display: flex;
-        gap: 6px;
+        .intro-title {
+            display: flex;
+            gap: 6px;
 
-        span {
-            background-color: #666666;
-            padding: 2px 8px;
-            border-radius: 25px;
-            font-size: 12px;
-            line-height: 19px;
-            letter-spacing: .5px;
+            span {
+                background-color: #666666;
+                padding: 2px 8px;
+                border-radius: 25px;
+                font-size: 12px;
+                line-height: 19px;
+                letter-spacing: .5px;
+            }
         }
     }
-}
 
-.intro-desc {
-    margin-top: auto;
-    width: 440px;
-    margin-right: 100px;
+    .intro-desc {
+        margin-top: auto;
+        width: 440px;
+        margin-right: 100px;
 
-    &>p {
-        font-size: 14px;
-        margin-bottom: 14px;
-        line-height: 18px;
-        color: white;
+        &>p {
+            margin-bottom: 14px;
+        }
     }
 }
 
@@ -58,19 +53,6 @@
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
-
-    &>p {
-        font-size: 28px;
-        line-height: 30px;
-        font-family: sans-serif;
-        font-weight: 500;
-        color: var(--gray);
-
-        span {
-            font-size: 28px;
-            color: var(--white);
-        }
-    }
 }
 
 .overview-list {
@@ -122,25 +104,7 @@
 
     .chal-content {
         margin: 18px 0 54px;
-        color: var(--white);
-        font-size: 28px;
-        line-height: 34px;
-        font-weight: 500;
         max-width: 790px;
-
-        span {
-            font-size: 28px;
-            color: var(--gray);
-            line-height: 20px;
-
-            p {
-                line-height: 12px;
-                color: black;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 0px 0px;
-            }
-        }
     }
 }
 
@@ -148,35 +112,21 @@
     display: flex;
     gap: 30px;
 
-    .indus-tags-box {
-        font-size: 16px;
-        font-weight: 500;
-
+    .tags-box {
         >p {
-            font-size: 16px;
-            font-weight: 500;
+            color: var(--gray);
             margin-bottom: 4px;
         }
 
-        .indus-tags {
+        .tags {
             display: flex;
             gap: 6px;
-        }
-    }
 
-    .service-tags-box {
-        font-size: 16px;
-        font-weight: 500;
-
-        >p {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
-
-        .service-tags {
-            display: flex;
-            gap: 6px;
+            * {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 21px;
+            }
         }
     }
 }
@@ -225,11 +175,8 @@
         padding: 56px 0 122px;
         height: 100%;
 
-        >span {
+        >h2 {
             color: black;
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 30px;
         }
 
         a {
@@ -266,14 +213,6 @@
         text-align: center;
         margin: 24px auto 46px;
         max-width: 782px;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 32px;
-
-        span {
-            font-size: 28px;
-            color: var(--gray);
-        }
     }
 }
 
@@ -300,12 +239,6 @@
         max-width: 35%;
         border-radius: 12px;
         padding: 20px;
-
-        h2 {
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 30px;
-        }
 
         p {
             font-weight: 500;
@@ -334,16 +267,15 @@
     margin: 100px 0 20px;
 
     .plan-title {
+        margin: 20px 0;
+
         div {
-            span {
-                font-size: 50px;
-                font-weight: 500;
-                line-height: 60px;
-                margin: 20px 0;
-            }
+            display: flex;
+            align-items: center;
+            gap: 10px;
 
             i {
-                font-size: 38px;
+                font-size: 32px;
                 color: var(--gray);
             }
 
