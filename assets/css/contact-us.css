@@ -1,0 +1,20 @@
+/* Heading Medium  */
+/* Heading Medium  */
+/* Heading Medium  */
+.heading-lg {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 62px;
+}
+
+.text-lg {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.text-sm {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+}
