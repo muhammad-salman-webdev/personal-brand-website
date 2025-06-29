@@ -1,0 +1,33 @@
+   .project-intro-section {
+       .project-intro-container {
+           .info-container {
+               flex-direction: column;
+               gap: 50px;
+
+               .intro-desc {
+                   align-self: start;
+               }
+           }
+       }
+   }
+
+   .overview-container {
+       flex-direction: column;
+       gap: 30px;
+
+       .overview-list {
+           justify-content: space-between;
+           min-width: 100%;
+
+           .overview-item {
+               :nth-child(1) {
+                   font-size: 68px;
+                   font-weight: 44px;
+               }
+
+               :nth-child(2) {
+                   font-size: 14px;
+               }
+           }
+       }
+   }

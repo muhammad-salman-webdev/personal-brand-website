@@ -282,8 +282,6 @@
 
                     p {
                         color: var(--white);
-                        line-height: 21px;
-                        font-size: 16px;
                         font-weight: 500;
                     }
 
@@ -393,8 +391,140 @@
         }
 
         p {
-            /* font-size: 16px; */
             color: var(--gray);
         }
+    }
+}
+
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+@media (max-width:992px) {
+    .project-intro-section {
+        .project-intro-container {
+            .info-container {
+                flex-direction: column;
+                gap: 50px;
+
+                .intro-desc {
+                    align-self: start;
+                }
+            }
+        }
+    }
+
+    .overview-container {
+        flex-direction: column;
+        gap: 30px;
+
+        .overview-list {
+            justify-content: space-between;
+            min-width: 100%;
+
+            .overview-item {
+                :nth-child(1) {
+                    font-size: 68px;
+                    font-weight: 44px;
+                }
+
+                :nth-child(2) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    .project-challenge-section {
+        .chal-Tags-wrapper {
+            flex-direction: column;
+
+            .tags-box {
+                .tags {
+                    * {
+                        font-size: 21px;
+                        font-weight: 500;
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    .project-ourwork-section {
+        .mockup-container {
+            flex-direction: column;
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                flex-direction: column;
+            }
+
+            .mockup-content {
+                min-width: 100%;
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-plan-section {
+        .project-plan-container {
+            .plan-main-container {
+                .plan-containers {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
+/* #########################  */
+/* #########################  */
+/* #########################  */
+/* #########################  */
+/* #########################  */
+.result-section {
+    margin: 100px 0;
+
+    .result-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        background: var(--white);
+        background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
+        background-position: end;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        height: 516px;
     }
 }

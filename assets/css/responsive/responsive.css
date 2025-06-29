@@ -1,9 +1,7 @@
 @media (max-width:1020px) {
     .header-section {
         .header-container {
-            .header-logo {
-                img {}
-            }
+            .header-logo {}
 
             .header-nav-container {
                 .nav-container {
@@ -17,15 +15,7 @@
                                 }
 
                                 &.sub-menu {
-                                    .trigerer {
-
-                                        &:hover,
-                                        &._active {}
-
-                                        span {}
-
-                                        i {}
-                                    }
+                                    .trigerer {}
 
                                     .sub-menu-container {
                                         .sub-menu-wrapper {
