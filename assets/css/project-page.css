@@ -48,6 +48,7 @@
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
+    gap: 30px;
 
     .overview-list {
         display: flex;
@@ -229,10 +230,26 @@
             max-width: 35%;
             border-radius: 12px;
             padding: 20px;
+            height: 360px;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            &>p {
+                font-size: 14px;
+                line-height: 20px;
+
+                span {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
         }
 
         .mockup-image {
             width: 100%;
+            display: flex;
         }
     }
 }
@@ -329,17 +346,9 @@
         }
 
         p {
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 32px;
             max-width: 735px;
             margin-bottom: 30px;
-            color: var(--gray);
-
-            span {
-                font-size: 28px;
-                color: var(--black);
-            }
+            color: var(--black);
         }
     }
 }
@@ -407,6 +416,14 @@
 /* ############################# */
 /* ############################# */
 /* ############################# */
+@media (max-width:1272px) {
+    .result-section {
+        .result-container {
+            background-image: none;
+        }
+    }
+}
+
 /* ############################# */
 /* ############################# */
 /* ############################# */
@@ -414,31 +431,36 @@
 @media (max-width:992px) {
     .project-intro-section {
         .project-intro-container {
+            gap: 50px;
+
             .info-container {
                 flex-direction: column;
                 gap: 50px;
 
                 .intro-desc {
+                    color: var(--gray);
                     align-self: start;
+                    max-width: 100%;
+
+                    &>a {
+                        margin-top: 18px;
+                    }
                 }
             }
         }
     }
 
     .overview-container {
+        align-items: start;
         flex-direction: column;
         gap: 30px;
+        padding: 40px 60px;
 
         .overview-list {
             justify-content: space-between;
             min-width: 100%;
 
             .overview-item {
-                :nth-child(1) {
-                    font-size: 68px;
-                    font-weight: 44px;
-                }
-
                 :nth-child(2) {
                     font-size: 14px;
                 }
@@ -453,15 +475,23 @@
     /* #######################  */
     /* #######################  */
     .project-challenge-section {
-        .chal-Tags-wrapper {
-            flex-direction: column;
+        .project-challenge-container {
+            .challenge-container {
+                .chal-content {
+                    margin-bottom: 36px;
+                }
 
-            .tags-box {
-                .tags {
-                    * {
-                        font-size: 21px;
-                        font-weight: 500;
-                        line-height: 29px;
+                .chal-Tags-wrapper {
+                    flex-direction: column;
+
+                    .tags-box {
+                        .tags {
+                            * {
+                                font-size: 21px;
+                                font-weight: 500;
+                                line-height: 29px;
+                            }
+                        }
                     }
                 }
             }
@@ -486,6 +516,42 @@
 
             .mockup-content {
                 min-width: 100%;
+                gap: 40px;
+                height: max-content;
+
+                h3 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 26px;
+
+                    span {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 26px 0 66px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            a {
+                padding: 4px 8px;
+                gap: 10px;
             }
         }
     }
@@ -498,33 +564,75 @@
     .project-plan-section {
         .project-plan-container {
             .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 50px;
+                        }
+                    }
+                }
+
                 .plan-containers {
                     grid-template-columns: repeat(2, 1fr);
+
+                    & .plan-container {
+                        p {
+                            font-size: 18px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }
-    }
-}
 
-/* #########################  */
-/* #########################  */
-/* #########################  */
-/* #########################  */
-/* #########################  */
-.result-section {
-    margin: 100px 0;
+        /* #########################  */
+        /* #########################  */
+        /* #########################  */
+        /* #########################  */
+        /* #########################  */
+        .result-section {
+            .result-container {
+                background-image: url(../media/images/project-page-images/project-01-images/result-container-responsive-image.webp);
+                background-position: right bottom;
+                background-size: 600px 450px;
+                height: 950px;
+                justify-content: unset
+            }
+        }
 
-    .result-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 40px;
-        background: var(--white);
-        background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
-        background-position: end;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        height: 516px;
+        /* #####################  */
+        /* #####################  */
+        /* #####################  */
+        /* #####################  */
+        /* #####################  */
+        /* #####################  */
+        .testimonial-profile {
+            & .profile-title {
+                h3 {
+                    font-size: 37px;
+                    line-height: 43px;
+                    font-weight: 500;
+                }
+            }
+
+            .profile-image {
+                max-width: 80px;
+            }
+        }
     }
-}
+
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
+    /* ############################# */
