@@ -477,17 +477,33 @@
     .project-challenge-section {
         .project-challenge-container {
             .challenge-container {
+                padding: 27px;
+
                 .chal-content {
                     margin-bottom: 36px;
+                    font-size: 26px;
+
+                    span {
+                        font-size: 26px;
+                    }
                 }
 
                 .chal-Tags-wrapper {
                     flex-direction: column;
+                    gap: 10px;
 
                     .tags-box {
+                        gap: 8px;
+
+                        p {
+                            font-size: 18px;
+                        }
+
                         .tags {
+                            margin-top: 0;
+
                             * {
-                                font-size: 21px;
+                                font-size: 20px;
                                 font-weight: 500;
                                 line-height: 29px;
                             }
@@ -576,6 +592,8 @@
                     grid-template-columns: repeat(2, 1fr);
 
                     & .plan-container {
+                        padding: 12px;
+
                         p {
                             font-size: 18px;
                         }
@@ -587,52 +605,57 @@
                 }
             }
         }
+    }
 
-        /* #########################  */
-        /* #########################  */
-        /* #########################  */
-        /* #########################  */
-        /* #########################  */
-        .result-section {
-            .result-container {
-                background-image: url(../media/images/project-page-images/project-01-images/result-container-responsive-image.webp);
-                background-position: right bottom;
-                background-size: 600px 450px;
-                height: 950px;
-                justify-content: unset
-            }
-        }
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        .result-container {
+            background-image: url(../media/images/project-page-images/project-01-images/result-container-responsive-image.webp);
+            background-position: right bottom;
+            background-size: 600px 450px;
+            height: 830px;
+            justify-content: unset;
 
-        /* #####################  */
-        /* #####################  */
-        /* #####################  */
-        /* #####################  */
-        /* #####################  */
-        /* #####################  */
-        .testimonial-profile {
-            & .profile-title {
-                h3 {
-                    font-size: 37px;
-                    line-height: 43px;
-                    font-weight: 500;
-                }
-            }
-
-            .profile-image {
-                max-width: 80px;
+            p {
+                margin-top: 20px;
             }
         }
     }
 
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
-    /* ############################# */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-profile {
+        & .profile-title {
+            h3 {
+                font-size: 37px;
+                line-height: 43px;
+                font-weight: 500;
+            }
+        }
+
+        .profile-image {
+            max-width: 80px;
+        }
+    }
+}
+
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
