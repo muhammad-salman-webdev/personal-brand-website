@@ -43,6 +43,7 @@
 
 .overview-container {
     display: flex;
+    margin-top: 30px;
     padding: 56px;
     border: 1px solid gray;
     justify-content: space-between;
@@ -237,12 +238,12 @@
             }
 
             &>p {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 20px;
 
                 span {
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
             }
         }
@@ -328,27 +329,34 @@
     margin: 100px 0;
 
     .result-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 40px;
-        background: var(--white);
-        background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
-        background-position: right;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 12px;
         height: 516px;
+        background: var(--white);
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
 
-        &>.result-title {
-            background: var(--black);
-            color: var(--white);
+        .result-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &>.result-title {
+                background: var(--black);
+                color: var(--white);
+            }
+
+            p {
+                max-width: 735px;
+                margin-bottom: 30px;
+                color: var(--black);
+            }
         }
 
-        p {
-            max-width: 735px;
-            margin-bottom: 30px;
-            color: var(--black);
+        /* Result Image  */
+        .result-image {
+            width: 400px;
+            height: 100px;
         }
     }
 }
@@ -419,7 +427,9 @@
 @media (max-width:1272px) {
     .result-section {
         .result-container {
-            background-image: none;
+            .result-image {
+                display: none;
+            }
         }
     }
 }
@@ -451,10 +461,10 @@
     }
 
     .overview-container {
-        align-items: start;
+        align-items: center;
         flex-direction: column;
         gap: 30px;
-        padding: 40px 60px;
+        padding: 30px 36px;
 
         .overview-list {
             justify-content: space-between;
@@ -614,11 +624,9 @@
     /* #########################  */
     .result-section {
         .result-container {
-            background-image: url(../media/images/project-page-images/project-01-images/result-container-responsive-image.webp);
-            background-position: right bottom;
-            background-size: 600px 450px;
-            height: 830px;
-            justify-content: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             p {
                 margin-top: 20px;
@@ -634,15 +642,9 @@
     /* #####################  */
     .testimonial-profile {
         & .profile-title {
-            h3 {
-                font-size: 37px;
-                line-height: 43px;
-                font-weight: 500;
+            p {
+                font-size: 16px;
             }
-        }
-
-        .profile-image {
-            max-width: 80px;
         }
     }
 }
@@ -659,3 +661,302 @@
 /* ############################# */
 /* ############################# */
 /* ############################# */
+@media (max-width:768px) {
+    .project-intro-section {
+        .project-intro-container {
+            gap: 20px;
+
+            .info-container {
+                flex-direction: column;
+                gap: 30px;
+
+                .intro-desc {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .overview-container {
+        padding: 20px 26px;
+        gap: 20px;
+
+        .overview-list {
+            .overview-item {
+                :nth-child(1) {
+                    font-size: 40px;
+                    line-height: 36px;
+                }
+
+                :nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 14px 0 40px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 4px 8px;
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-challenge-section {
+        margin: 60px 0;
+    }
+
+    /* ############################  */
+    .project-ourwork-section {
+        margin-top: 60px;
+
+        & .project-ourwork-container {
+            .work-content {
+                margin: 14px 0 36px;
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-plan-section {
+        .project-plan-container {
+            .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 40px;
+                            line-height: 48px;
+                        }
+
+                        i {
+                            font-size: 27px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    & .plan-container {
+                        padding: 8px;
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        margin: 60px 0;
+
+        .result-container {
+            padding: 28px;
+            /* height: 930px; */
+        }
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-container {
+        &>p {
+            font-size: 34px;
+            padding: 10px 24px;
+        }
+    }
+
+    .testimonial-profile {
+        & .profile-title {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+@media (max-width:576px) {
+    .project-intro-section {
+        .project-intro-container {
+            .info-container {
+                gap: 14px;
+            }
+
+            gap: 10px;
+        }
+    }
+
+    .overview-container {
+        padding: 14px 18px;
+        gap: 10px;
+        margin-top: 20px;
+
+        .overview-list {
+            gap: 10px;
+
+            .overview-item {
+                :nth-child(1) {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+
+                :nth-child(2) {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-challenge-section {
+        margin: 30px 0;
+
+        & .project-challenge-container {
+            & .challenge-container {
+                padding: 14px 18px;
+
+                .chal-content {
+                    font-size: 20px;
+                    margin: 12px 0 40px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+
+                & .chal-Tags-wrapper {
+                    .tags-box {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        & .tags {
+                            background: red;
+                            gap: 10px;
+
+                            * {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-ourwork-section {
+        margin-top: 60px;
+
+        & .project-ourwork-container {
+            .work-content {
+                margin: 14px 0 36px;
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-plan-section {
+        .project-plan-container {
+            .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 40px;
+                            line-height: 48px;
+                        }
+
+                        i {
+                            font-size: 27px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    & .plan-container {
+                        padding: 8px;
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        margin: 60px 0;
+
+        .result-container {
+            padding: 28px;
+            /* height: 930px; */
+        }
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-container {
+        &>p {
+            font-size: 34px;
+            padding: 10px 24px;
+        }
+    }
+
+    .testimonial-profile {
+        & .profile-title {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
