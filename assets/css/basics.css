@@ -374,6 +374,14 @@ h3 {
         font-size: 12px;
         line-height: 18px;
         padding: 0px 6px;
+
+        span {
+            font-size: 12px;
+        }
+
+        i {
+            font-size: 14px;
+        }
     }
 
     /* Heading Medium  */

@@ -364,20 +364,21 @@
 /* ##########################  */
 /* ##########################  */
 /* ##########################  */
-/* ##########################  */
-.testimonial-container {
-    margin: 70px 0;
-    text-align: center;
+.testimonial-section {
+    margin: 100px 0;
 
-    &>h2 {
-        margin: 0 auto;
-    }
-
-    &>p {
+    .testimonial-container {
         text-align: center;
-        margin: 14px auto 34px;
-        max-width: 770px;
-        padding: 20px 0;
+
+        &>h2 {
+            margin: 0 auto;
+        }
+
+        &>p {
+            text-align: center;
+            margin: 14px auto 34px;
+            max-width: 770px;
+        }
     }
 }
 
@@ -533,7 +534,7 @@
     /* ########################### */
     .project-ourwork-section {
         .mockup-container {
-            flex-direction: column;
+            flex-direction: column-reverse;
 
             &:nth-child(2),
             &:nth-child(4) {
@@ -573,6 +574,7 @@
 
             h2 {
                 font-size: 24px;
+                line-height: 25px;
             }
 
             a {
@@ -700,20 +702,6 @@
     /* ############################  */
     /* ############################  */
     /* ############################  */
-    .project-exper-video {
-        .exper-heading {
-            padding: 14px 0 40px;
-
-            h2 {
-                font-size: 20px;
-            }
-
-            a {
-                padding: 4px 8px;
-            }
-        }
-    }
-
     /* ############################  */
     /* ############################  */
     /* ############################  */
@@ -733,7 +721,24 @@
     }
 
     /* ############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 14px 0 40px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 4px 8px;
+            }
+        }
+    }
+
+    /* ############################  */
     .project-plan-section {
+        margin: 60px 0;
+
         .project-plan-container {
             .plan-main-container {
                 .plan-title {
@@ -755,6 +760,7 @@
 
                         p {
                             font-size: 16px;
+                            line-height: 21px;
                         }
 
                         span {
@@ -773,11 +779,6 @@
     /* #########################  */
     .result-section {
         margin: 60px 0;
-
-        .result-container {
-            padding: 28px;
-            /* height: 930px; */
-        }
     }
 
     /* #####################  */
@@ -786,10 +787,18 @@
     /* #####################  */
     /* #####################  */
     /* #####################  */
-    .testimonial-container {
-        &>p {
-            font-size: 34px;
-            padding: 10px 24px;
+    .testimonial-section {
+        margin: 60px 0;
+
+        .testimonial-container {
+            &>p {
+                font-size: 34px;
+                margin: 10px 0 24px;
+
+                span {
+                    font-size: 34px;
+                }
+            }
         }
     }
 
@@ -845,11 +854,13 @@
     /* ############################  */
     /* ############################  */
     .project-challenge-section {
-        margin: 30px 0;
+        margin: 50px 0;
 
         & .project-challenge-container {
+            gap: 10px;
+
             & .challenge-container {
-                padding: 14px 18px;
+                padding: 18px;
 
                 .chal-content {
                     font-size: 20px;
@@ -867,11 +878,8 @@
                         }
 
                         & .tags {
-                            background: red;
-                            gap: 10px;
-
                             * {
-                                font-size: 16px;
+                                font-size: 13px;
                             }
                         }
                     }
@@ -881,45 +889,92 @@
     }
 
     /* ############################  */
+    /* ############################  */
+    /* ############################  */
     .project-ourwork-section {
-        margin-top: 60px;
+        margin: 40px 0;
 
         & .project-ourwork-container {
             .work-content {
-                margin: 14px 0 36px;
+                margin: 10px 0 22px;
+            }
+        }
+
+        .mockups-container {
+            gap: 10px;
+
+            .mockup-container {
+                gap: 10px;
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    flex-direction: column-reverse;
+                }
+
+                .mockup-content {
+                    min-width: 100%;
+                    gap: 40px;
+                    height: max-content;
+                    padding: 14px;
+
+                    h3 {
+                        font-size: 26px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+
+                        span {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
             }
         }
     }
 
+    /* ##############################  */
+    /* ##############################  */
+    /* ##############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 10px 0 24px;
+
+            h2 {
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    /* ##############################  */
     /* ############################  */
     .project-plan-section {
+        margin: 50px 0;
+
         .project-plan-container {
+            gap: 10px;
+
             .plan-main-container {
                 .plan-title {
+                    margin: 10px 0;
+
                     div {
                         h2 {
-                            font-size: 40px;
-                            line-height: 48px;
+                            font-size: 28px;
+                            line-height: 34px;
                         }
 
                         i {
-                            font-size: 27px;
+                            font-size: 22px;
                         }
                     }
                 }
 
                 .plan-containers {
-                    & .plan-container {
-                        padding: 8px;
-
-                        p {
-                            font-size: 16px;
-                        }
-
-                        span {
-                            font-size: 16px;
-                        }
-                    }
+                    grid-template-columns: repeat(1, 1fr);
                 }
             }
         }
@@ -931,11 +986,16 @@
     /* #########################  */
     /* #########################  */
     .result-section {
-        margin: 60px 0;
+        margin: 40px 0;
 
-        .result-container {
-            padding: 28px;
-            /* height: 930px; */
+        & .result-container {
+            .result-content {
+                padding: 26px 28px;
+
+                p {
+                    margin: 10px 0;
+                }
+            }
         }
     }
 
@@ -945,15 +1005,29 @@
     /* #####################  */
     /* #####################  */
     /* #####################  */
-    .testimonial-container {
-        &>p {
-            font-size: 34px;
-            padding: 10px 24px;
+    .testimonial-section {
+        margin: 40px 0;
+
+        .testimonial-container {
+            &>p {
+                font-size: 28px;
+                line-height: 31px;
+
+                & span {
+                    line-height: 31px;
+                    font-size: 28px;
+                }
+            }
         }
     }
 
     .testimonial-profile {
         & .profile-title {
+            h3 {
+                font-size: 22px;
+                line-height: 27px;
+            }
+
             p {
                 font-size: 16px;
             }
