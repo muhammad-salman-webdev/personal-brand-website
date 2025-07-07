@@ -252,7 +252,7 @@ h3 {
 
     /* Fade Text Small  */
     .text-fade-sm {
-        font-size: 21px;
+        font-size: 20px;
         line-height: 29px;
 
         span {
@@ -396,16 +396,10 @@ h3 {
         line-height: 54px;
     }
 
-    /* Heading Medium  */
-    .heading-lg {
-        font-size: 46px;
-        line-height: 53px;
-    }
-
     /* Fade Text Small  */
     .text-fade-sm {
-        font-size: 21px;
-        line-height: 29px;
+        font-size: 16px;
+        line-height: 21px;
 
         span {
             color: var(--gray);
@@ -419,17 +413,19 @@ h3 {
         line-height: 28px;
 
         span {
+            line-height: 28px;
             font-size: 20px;
         }
     }
 
     /* Fade Text large  */
     .text-fade-lg {
-        font-size: 41px;
-        line-height: 41px;
+        font-size: 28px;
+        line-height: 33px;
 
         span {
-            font-size: 41px;
+            line-height: 33px;
+            font-size: 28px;
             color: var(--gray);
         }
     }
