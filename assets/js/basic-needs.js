@@ -14,7 +14,7 @@ import "./components/header-menu.js";
 import "./components/plasma-button.js";
 
 // Swiper carousel for displaying brands logos worked with
-import "./components/worked-brands-logo-swiper.js";
+// import "./components/worked-brands-logo-swiper.js";
 
 // // GSAP animation module for the home page welcome section
 // import "./gsap-animations/home-welcome-gsap.js";

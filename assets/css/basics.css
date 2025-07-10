@@ -28,6 +28,17 @@
 body {
     background-color: var(--black);
     color: white;
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+html.no-scroll {
+    overflow: hidden;
 }
 
 img {
