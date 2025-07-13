@@ -603,3 +603,35 @@
 .section_spacings {
     margin-top: 100px;
 }
+
+@media (max-width:576px) {
+    .c_plasma-button {
+        .c_plasma-button-inner {
+            .c_plasma-button-inner-box {
+                padding: 4px 10px;
+
+                .c_plamsa-button-inner-glow-1 {}
+
+                .c_plamsa-button-inner-glow-2 {}
+
+                .c_plamsa-button-inner-glow-3 {}
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .c_plasma-button-inner-top-right-glow {}
+
+            .c_plasma-button-inner-bototm-left-glow {}
+
+            .c_plasma-button-inner-bototm-left-glow-2 {}
+        }
+
+        .c_plasma-button-top-right-glow {}
+
+        .c_plasma-button-bottom-left-glow {}
+
+        .c_plasma-button-bg-circle {}
+    }
+}

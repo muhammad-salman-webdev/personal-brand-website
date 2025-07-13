@@ -8,6 +8,7 @@ function homeWelcomeAnimation() {
   const header = document.getElementById("headerMain");
   const heroTitle = document.getElementById("heroTitle");
   const heroTitleDesc = document.getElementById("heroTitleDesc");
+  const heroSocialProof = document.getElementById("heroSocialProof");
   const heroCtaBtn = document.getElementById("heroCtaBtn");
   const heroBrandsLogoHeading = document.getElementById(
     "heroBrandsLogoHeading"
@@ -61,6 +62,7 @@ function homeWelcomeAnimation() {
     opacity: 0,
     duration: 0.5,
     ease: "power1.out",
+    y: -20,
   });
 
   // Step 6: Fade in the hero title description to complement the main heading
@@ -68,6 +70,15 @@ function homeWelcomeAnimation() {
     opacity: 0,
     duration: 0.5,
     ease: "power1.out",
+    y: 10,
+  });
+
+  // Step 6: Fade in the hero title description to complement the main heading
+  welcomeAnimationTL.from(heroSocialProof, {
+    opacity: 0,
+    duration: 0.5,
+    ease: "power1.out",
+    y: 10,
   });
 
   // Step 7: Fade in the Call To Action button to encourage user interaction

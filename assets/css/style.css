@@ -60,12 +60,143 @@
                 span {}
             }
 
-            p {
+            &>p {
                 max-width: 660px;
             }
 
-            .hero-cta-button {
+            .hero-social-proof {
+                display: flex;
+                align-items: center;
+                gap: 14px;
                 margin-top: 10px;
+                cursor: default;
+
+                &:hover {
+                    .clients-images a {
+                        transform: translateY(0px) scale(1.1);
+                    }
+
+                    .clients-images .tooltip {
+                        top: -54px;
+                        opacity: 1;
+                    }
+                }
+
+                .clients-images {
+                    display: flex;
+                    position: relative;
+
+                    &:hover a {
+                        transform: translateY(0px) scale(.85);
+                    }
+
+                    &:has(a:nth-child(2):hover) .tooltip {
+                        transform: translateX(-62px);
+                    }
+
+                    &:has(a:nth-child(3):hover) .tooltip {
+                        transform: translateX(-37px);
+                    }
+
+                    &:has(a:nth-child(4):hover) .tooltip {
+                        transform: translateX(-14px);
+                    }
+
+                    &:has(a:nth-child(5):hover) .tooltip {
+                        transform: translateX(8px);
+                    }
+
+                    &:has(a:nth-child(6):hover) .tooltip {
+                        transform: translateX(33px);
+                    }
+
+                    .tooltip {
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        top: -56px;
+                        top: -75px;
+                        opacity: 0;
+                        pointer-events: none;
+                        min-width: max-content;
+                        transition: all .5s ease;
+                        will-change: transform;
+
+                        span {
+                            color: black;
+                            border-radius: 5px;
+                            background-color: white;
+                            padding: 6px 8px;
+                            font-size: 12px;
+                            line-height: 14px;
+                            z-index: 2;
+                        }
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            width: 12px;
+                            aspect-ratio: 1/1;
+                            background-color: white;
+                            position: absolute;
+                            bottom: -4px;
+                            transform: rotate(45deg);
+                            border-radius: 2px;
+                        }
+                    }
+
+                    &>a {
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        transition: all .3s ease;
+                        z-index: 2;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        margin-left: -12px;
+                        will-change: transform;
+
+                        &:hover {
+                            transform: translateY(-10px) scale(1.25);
+                        }
+
+                        img {
+                            width: 35px;
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
+                            object-position: center center;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            display: block;
+                        }
+                    }
+                }
+
+                .stars-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    .stars {
+                        gap: 3px;
+                        display: flex;
+                        justify-content: start;
+
+                        i {
+                            color: #ff9b30;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .text {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .hero-cta-button {
+                margin-top: 14px;
             }
         }
     }

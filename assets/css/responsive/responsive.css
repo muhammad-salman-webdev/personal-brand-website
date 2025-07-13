@@ -16,14 +16,11 @@
                     bottom: 20px;
                     width: 350px;
                     z-index: 10;
-                    backdrop-filter: blur(6px);
+                    /* backdrop-filter: blur(6px); */
                     border-radius: 20px;
                     overflow-x: hidden;
                     overflow: hidden;
 
-                    /* padding: 3px; */
-                    /* background: #000000d5; */
-                    /* background: #000000; */
                     .floating-bg-gradient-container {
                         display: block;
                         position: absolute;
@@ -33,19 +30,18 @@
                                 255,
                                 255,
                                 0.05);
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                        backdrop-filter: blur(8px);
+                        /* border: 1px solid rgba(255, 255, 255, 0.1); */
+                        /* backdrop-filter: blur(8px); */
                         inset: 0;
 
                         .gradient-background-single {
-                            /* inset: 5px; */
                             position: absolute;
                             inset: 0;
                             overflow: hidden;
                             pointer-events: none;
                             z-index: 1;
+                            border-radius: 17px;
 
-                            /* background-color: red; */
                             .liquid-ball {
                                 margin: 100px 0 0 100px;
                                 position: absolute;
@@ -75,12 +71,12 @@
                         backdrop-filter: blur(6px);
                         z-index: 10;
                         position: relative;
-                        border-radius: inherit;
+                        border-radius: 17px;
                         /* background: rgb(59, 59, 59); */
-                        background-color: rgba(255,
+                        /* background-color: rgba(255,
                                 255,
                                 255,
-                                0.05);
+                                0.05); */
                         background: #000000ae;
                         padding: 0;
                         margin: 4px;
@@ -203,6 +199,8 @@
 @media (max-width:576px) {
     .header-section {
         .header-container {
+            height: 70px;
+
             .header-logo {
                 img {}
             }
@@ -210,6 +208,7 @@
             .header-nav-container {
                 .nav-container {
                     width: calc(100vw - 40px);
+                    top: 75px;
 
                     &>nav {
                         &>ul {

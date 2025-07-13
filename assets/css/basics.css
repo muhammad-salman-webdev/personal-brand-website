@@ -5,6 +5,9 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
 }
 
 * {
