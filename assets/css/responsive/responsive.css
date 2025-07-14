@@ -1,9 +1,7 @@
 @media (max-width:1024px) {
     .header-section {
         .header-container {
-            .header-logo {
-                img {}
-            }
+            .header-logo {}
 
             .header-nav-container {
                 gap: 14px;
@@ -206,6 +204,8 @@
             }
 
             .header-nav-container {
+                gap: 14px;
+
                 .nav-container {
                     width: calc(100vw - 40px);
                     top: 75px;

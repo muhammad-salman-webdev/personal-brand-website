@@ -1,107 +1,79 @@
-.project-intro-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 40px 0;
-}
+.project-intro-section {
+    margin-top: 40px;
 
-.project-card {
-    h2 {
-        font-size: 60px;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    .intro-title {
+    .project-intro-container {
         display: flex;
-        gap: 6px;
+        gap: 20px;
+        flex-direction: column;
 
-        span {
-            background-color: #666666;
-            padding: 4px 8px;
+        .info-container {
+            display: flex;
+            justify-content: space-between;
             border-radius: 12px;
-            font-size: 11px;
-            letter-spacing: .5px;
+
+            .project-info {
+                .tags-container {
+                    margin-top: 10px;
+                    display: flex;
+                    gap: 6px;
+
+                    .tag {
+                        background-color: #666666;
+                        padding: 2px 8px;
+                        border-radius: 25px;
+                        font-size: 12px;
+                        line-height: 19px;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+
+            .intro-desc {
+                align-self: end;
+                max-width: 440px;
+                margin-right: 100px;
+
+                &>a {
+                    margin-top: 14px;
+                }
+            }
         }
     }
 }
 
-.intro-desc {
-    margin-top: auto;
-    width: 440px;
-    margin-right: 100px;
-
-    &>p {
-        font-size: 14px;
-        margin-bottom: 14px;
-        line-height: 16px;
-        color: white;
-    }
-
-    .project-process-label {
-        a {
-            color: black;
-            font-size: 14px;
-            font-weight: 600;
-        }
-    }
-}
-
-/* -------------------------------- */
-/*  Project Intro Container Ends    */
-/* -------------------------------- */
-/* ############################### */
-/* ############################### */
-/* ############################### */
-/* ############################### */
-/* ------------------------------- */
-/*  Project  Overview  Starts      */
-/* ------------------------------- */
 .overview-container {
     display: flex;
+    margin-top: 30px;
     padding: 56px;
     border: 1px solid gray;
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
+    gap: 30px;
 
-    &>p {
-        font-size: 28px;
-        line-height: 30px;
-        font-family: sans-serif;
-        font-weight: 500;
-        color: var(--gray);
+    .overview-list {
+        display: flex;
+        gap: 50px;
 
-        span {
-            color: var(--white);
+        .overview-item {
+            :nth-child(1) {
+                font-size: 50px;
+                font-weight: 500;
+                color: var(--white);
+                line-height: 50px;
+            }
+
+            :nth-child(2) {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--gray);
+            }
         }
     }
 }
 
-.overview-list {
-    display: flex;
-    gap: 50px;
-
-    .overview-item {
-        :nth-child(1) {
-            font-size: 50px;
-            font-weight: 500;
-            color: var(--white);
-            line-height: 50px;
-        }
-
-        :nth-child(2) {
-            font-size: 12px;
-            font-weight: 400;
-            color: var(--gray);
-        }
-    }
-}
-
+/* Over View Video  */
 .overview-video {
-    margin-top: 50px;
-    margin: 10px auto 90px;
     width: 100%;
     height: 100%;
 
@@ -122,89 +94,52 @@
 /* --------------------------------- */
 /* Project Challenge Section Starts  */
 /* --------------------------------- */
-.project-challenge-container {
-    border: 1px solid gray;
-    border-radius: var(--border-radius);
-    padding: 56px;
+.project-challenge-section {
+    margin-top: 100px;
 
-    .chal-content {
-        margin: 18px 0 54px;
-        color: var(--white);
-        font-size: 28px;
-        line-height: 30px;
-        font-weight: 500;
-        max-width: 790px;
+    .project-challenge-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
 
-        span {
-            color: var(--gray);
-            line-height: 20px;
+        .challenge-container {
+            border: 1px solid gray;
+            border-radius: var(--border-radius);
+            padding: 56px;
 
-            p {
-                line-height: 12px;
-                color: black;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 0px 0px;
+            .chal-content {
+                margin: 18px 0 54px;
+                max-width: 790px;
             }
         }
     }
-}
 
-.chal-Tags-wrapper {
-    display: flex;
-    gap: 30px;
+    .chal-Tags-wrapper {
+        display: flex;
+        gap: 30px;
 
-    .indus-tags-box {
-        font-size: 16px;
-        font-weight: 500;
+        .tags-box {
+            &>p {
+                color: var(--gray);
+            }
 
-        >p {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
+            .tags {
+                margin-top: 4px;
+                display: flex;
+                gap: 6px;
 
-        .indus-tags {
-            display: flex;
-            gap: 6px;
-        }
-    }
-
-    .service-tags-box {
-        font-size: 16px;
-        font-weight: 500;
-
-        >p {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
-
-        .service-tags {
-            display: flex;
-            gap: 6px;
+                * {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 21px;
+                }
+            }
         }
     }
-}
 
-/* ------------------------------- */
-/* Project Challenge Section Ends  */
-/* ------------------------------- */
-/* ############################ */
-/* ############################ */
-/* ############################ */
-/* ############################ */
-/* ############################ */
-/* --------------------------- */
-/* START ::Project Layout Image */
-/* --------------------------- */
-.project-layout-image {
-    margin: 96px 0;
-    width: 100%;
-    height: 100%;
-
-    img {
+    .project-layout-image {
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -217,214 +152,227 @@
 /* ############################# */
 .project-exper-video {
     width: 100%;
+    position: relative;
+
+    .exper-heading {
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 56px 0 122px;
+        height: 100%;
+
+        &>h2 {
+            color: black;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            gap: 34px;
+            align-items: center;
+            padding: 10px 18px;
+
+            i {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
 
     video {
         width: 100%;
+        border-radius: 22px;
     }
 }
 
 /* ############################### */
 /* Project Development Container  */
 /* ############################### */
-.project-ourwork-container {
+.project-ourwork-section {
     margin: 100px 0;
-    padding-top: 100px;
 
-    .ourwork-title {
-        margin: 0 auto;
-    }
+    .project-ourwork-container {
+        .ourwork-title {
+            margin: 0 auto;
+        }
 
-    .work-content {
-        text-align: center;
-        margin: 24px auto 46px;
-        max-width: 782px;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 32px;
-
-        span {
-            color: var(--gray);
+        .work-content {
+            text-align: center;
+            margin: 24px auto 46px;
+            max-width: 782px;
         }
     }
-}
 
-.mockups-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.mockup-container {
-    display: flex;
-    gap: 20px;
-
-    &:nth-child(2),
-    &:nth-child(4) {
-        flex-direction: row-reverse;
-    }
-
-    .mockup-content {
+    .mockups-container {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        border: 1px solid #dfe0e4;
-        max-width: 35%;
-        border-radius: 12px;
-        padding: 20px;
+        gap: 20px;
+    }
 
-        h2 {
-            font-size: 28px;
-            font-weight: 500;
-            line-height: 30px;
+    .mockup-container {
+        display: flex;
+        gap: 20px;
+
+        &:nth-child(2),
+        &:nth-child(4) {
+            flex-direction: row-reverse;
         }
 
-        p {
-            font-weight: 500;
-            font-size: 16px;
-            color: var(--gray);
-            line-height: 22px;
+        .mockup-content {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            border: 1px solid #dfe0e4;
+            max-width: 35%;
+            border-radius: 12px;
+            padding: 20px;
+            height: 360px;
+
+            h3 {
+                font-size: 22px;
+            }
+        }
+
+        .mockup-image {
+            width: 100%;
+            display: flex;
+        }
+    }
+}
+
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+.project-plan-section {
+    margin: 100px 0;
+
+    .project-plan-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .plan-main-container {
+            .plan-title {
+                margin: 20px 0;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+
+                    i {
+                        font-size: 32px;
+                        color: var(--gray);
+                    }
+                }
+            }
+
+            .plan-containers {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+
+                .plan-container {
+                    border: 2px solid var(--gray);
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 30px;
+                    border-radius: 12px;
+
+                    p {
+                        color: var(--white);
+                        font-weight: 500;
+                    }
+
+                    span {
+                        color: var(--gray);
+                    }
+                }
+            }
         }
     }
 
-    .mockup-image {
+    .shopify-image {
         width: 100%;
+        height: 100%;
 
         img {
-            border-radius: 12px;
             width: 100%;
         }
     }
 }
 
-/* ######################## */
-/* ######################## */
-/* ######################## */
-/* ######################## */
-/* ######################## */
-.project-plan-container {
-    padding: 100px 70px;
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+/* #############################3  */
+.result-section {
+    margin: 100px 0;
 
-    .plan-title {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 60px;
-        max-width: 540px;
-        margin: 20px 0;
+    .result-container {
+        height: 516px;
+        background: var(--white);
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
 
-        i {
-            color: var(--gray);
-        }
-    }
-
-    .plan-containers {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-
-        .plan-container {
-            border: 2px solid var(--gray);
-            padding: 20px;
+        .result-content {
+            padding: 40px;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
-            gap: 30px;
-            border-radius: 12px;
+            justify-content: space-between;
+
+            &>.result-title {
+                background: var(--black);
+                color: var(--white);
+            }
 
             p {
-                color: var(--white);
-                line-height: 21px;
-                font-size: 16px;
-                font-weight: 500;
+                max-width: 735px;
+                margin-bottom: 30px;
+                color: var(--black);
             }
+        }
 
-            span {
-                color: var(--gray);
-            }
+        /* Result Image  */
+        .result-image {
+            width: 400px;
+            height: 100px;
         }
     }
 }
 
-/* #############################3  */
-/* #############################3  */
-/* #############################3  */
-/* #############################3  */
-/* #############################3  */
-.shopify-image {
-    width: 100%;
-    height: 100%;
-
-    img {
-        width: 100%;
-    }
-}
-
-/* #############################3  */
-/* #############################3  */
-/* #############################3  */
-/* #############################3  */
-.result-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+.testimonial-section {
     margin: 100px 0;
-    padding: 40px;
-    background: var(--white);
-    background-image: url(../media/images/project-page-images/project-01-images/background-image.webp);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    height: 516px;
 
-    &>.result-title {
-        background: var(--black);
-        color: var(--white);
-        padding: 4px 9px;
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 26px;
-        max-width: 735px;
-        margin-bottom: 30px;
-        color: var(--gray);
-
-        span {
-            color: var(--black);
-        }
-    }
-}
-
-/* ##########################  */
-/* ##########################  */
-/* ##########################  */
-/* ##########################  */
-.testi-container {
-    margin: 70px 0;
-    text-align: center;
-
-    >span {
-        margin: 0 auto;
-    }
-
-    .testi-content {
+    .testimonial-container {
         text-align: center;
-        margin: 14px auto 34px;
-        max-width: 770px;
-        font-size: 38px;
-        padding: 20px 0;
-        font-weight: 500;
-        line-height: 38px;
 
-        span {
-            color: var(--gray);
+        &>h2 {
+            margin: 0 auto;
+        }
+
+        &>p {
+            text-align: center;
+            margin: 14px auto 34px;
+            max-width: 770px;
         }
     }
 }
 
-.testi-profile {
+.testimonial-profile {
     margin: 0 auto;
     display: flex;
     gap: 14px;
@@ -433,7 +381,7 @@
     justify-content: center;
 
     .profile-image {
-        width: 58px;
+        max-width: 58px;
 
         img {
             width: 100%;
@@ -446,13 +394,617 @@
         text-align: start;
 
         h3 {
-            font-size: 28px;
-            line-height: 34px;
+            font-size: 32px;
+            line-height: 36px;
         }
 
         p {
-            font-size: 16px;
             color: var(--gray);
+        }
+    }
+}
+
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+@media (max-width:1272px) {
+    .result-section {
+        .result-container {
+            .result-image {
+                display: none;
+            }
+        }
+    }
+}
+
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+@media (max-width:992px) {
+    .project-intro-section {
+        .project-intro-container {
+            gap: 50px;
+
+            .info-container {
+                flex-direction: column;
+                gap: 50px;
+
+                .intro-desc {
+                    color: var(--gray);
+                    align-self: start;
+                    max-width: 100%;
+
+                    &>a {
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .overview-container {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 36px;
+
+        .overview-list {
+            justify-content: space-between;
+            min-width: 100%;
+
+            .overview-item {
+                :nth-child(2) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    .project-challenge-section {
+        .project-challenge-container {
+            .challenge-container {
+                padding: 27px;
+
+                .chal-content {
+                    margin-bottom: 36px;
+                    font-size: 26px;
+
+                    span {
+                        font-size: 26px;
+                    }
+                }
+
+                .chal-Tags-wrapper {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .tags-box {
+                        gap: 8px;
+
+                        p {
+                            font-size: 18px;
+                        }
+
+                        .tags {
+                            margin-top: 0;
+
+                            * {
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    /* ########################### */
+    .project-ourwork-section {
+        .mockup-container {
+            flex-direction: column-reverse;
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                flex-direction: column;
+            }
+
+            .mockup-content {
+                min-width: 100%;
+                gap: 40px;
+                height: max-content;
+
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 26px 0 66px;
+
+            h2 {
+                font-size: 24px;
+                line-height: 25px;
+            }
+
+            a {
+                padding: 4px 8px;
+                gap: 10px;
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-plan-section {
+        .project-plan-container {
+            .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 50px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    & .plan-container {
+                        padding: 12px;
+
+                        p {
+                            font-size: 18px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        .result-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-profile {
+        & .profile-title {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+/* ############################# */
+@media (max-width:768px) {
+    .project-intro-section {
+        .project-intro-container {
+            gap: 20px;
+
+            .info-container {
+                flex-direction: column;
+                gap: 30px;
+
+                .intro-desc {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .overview-container {
+        padding: 20px 26px;
+        gap: 20px;
+
+        .overview-list {
+            .overview-item {
+                :nth-child(1) {
+                    font-size: 40px;
+                    line-height: 36px;
+                }
+
+                :nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-challenge-section {
+        margin: 60px 0;
+    }
+
+    /* ############################  */
+    .project-ourwork-section {
+        margin-top: 60px;
+
+        & .project-ourwork-container {
+            .work-content {
+                margin: 14px 0 36px;
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 14px 0 40px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 4px 8px;
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-plan-section {
+        margin: 60px 0;
+
+        .project-plan-container {
+            .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 40px;
+                            line-height: 48px;
+                        }
+
+                        i {
+                            font-size: 27px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    & .plan-container {
+                        padding: 8px;
+
+                        p {
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        margin: 60px 0;
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-section {
+        margin: 60px 0;
+
+        .testimonial-container {
+            &>p {
+                font-size: 34px;
+                margin: 10px 0 24px;
+
+                span {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+
+    .testimonial-profile {
+        & .profile-title {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+/* ##################  */
+@media (max-width:576px) {
+    .project-intro-section {
+        .project-intro-container {
+            .info-container {
+                gap: 14px;
+            }
+
+            gap: 10px;
+        }
+    }
+
+    .overview-container {
+        align-items: start;
+        padding: 14px 18px;
+        gap: 10px;
+        margin-top: 20px;
+
+        .overview-list {
+            gap: 10px;
+
+            .overview-item {
+                max-width: 235px;
+
+                :nth-child(1) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+
+                :nth-child(2) {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-challenge-section {
+        margin: 50px 0;
+
+        & .project-challenge-container {
+            gap: 10px;
+
+            & .challenge-container {
+                padding: 18px;
+
+                .chal-content {
+                    font-size: 20px;
+                    margin: 12px 0 40px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+
+                & .chal-Tags-wrapper {
+                    .tags-box {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        & .tags {
+                            * {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-ourwork-section {
+        margin: 40px 0;
+
+        & .project-ourwork-container {
+            .work-content {
+                margin: 10px 0 22px;
+            }
+        }
+
+        .mockups-container {
+            gap: 10px;
+
+            .mockup-container {
+                gap: 10px;
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    flex-direction: column-reverse;
+                }
+
+                .mockup-content {
+                    min-width: 100%;
+                    gap: 40px;
+                    height: max-content;
+                    padding: 14px;
+
+                    h3 {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ##############################  */
+    /* ##############################  */
+    /* ##############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 10px 0 24px;
+
+            h2 {
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    /* ##############################  */
+    /* ############################  */
+    .project-plan-section {
+        margin: 50px 0;
+
+        .project-plan-container {
+            gap: 10px;
+
+            .plan-main-container {
+                .plan-title {
+                    margin: 10px 0;
+
+                    div {
+                        h2 {
+                            background: red;
+                            font-size: 28px;
+                            line-height: 34px;
+                        }
+
+                        i {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        margin: 40px 0;
+
+        & .result-container {
+            .result-content {
+                padding: 26px 28px;
+
+                p {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-section {
+        margin: 40px 0;
+
+        .testimonial-container {
+            &>p {
+                font-size: 28px;
+                line-height: 31px;
+
+                & span {
+                    line-height: 31px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .testimonial-profile {
+        & .profile-title {
+            h3 {
+                font-size: 22px;
+                line-height: 27px;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
