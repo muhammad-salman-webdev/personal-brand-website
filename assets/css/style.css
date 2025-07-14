@@ -91,23 +91,23 @@
                     }
 
                     &:has(a:nth-child(2):hover) .tooltip {
-                        transform: translateX(-62px);
+                        transform: translateX(-46px);
                     }
 
                     &:has(a:nth-child(3):hover) .tooltip {
-                        transform: translateX(-37px);
+                        transform: translateX(-20px);
                     }
 
                     &:has(a:nth-child(4):hover) .tooltip {
-                        transform: translateX(-14px);
+                        transform: translateX(6px);
                     }
 
                     &:has(a:nth-child(5):hover) .tooltip {
-                        transform: translateX(8px);
+                        transform: translateX(34px);
                     }
 
                     &:has(a:nth-child(6):hover) .tooltip {
-                        transform: translateX(33px);
+                        transform: translateX(62px);
                     }
 
                     .tooltip {
@@ -116,6 +116,7 @@
                         position: absolute;
                         top: -56px;
                         top: -75px;
+                        top: -62px;
                         opacity: 0;
                         pointer-events: none;
                         min-width: max-content;
@@ -154,8 +155,11 @@
                         overflow: hidden;
                         border-radius: 50%;
                         border: 2px solid white;
-                        margin-left: -12px;
                         will-change: transform;
+
+                        &:not(:nth-child(2)) {
+                            margin-left: -12px;
+                        }
 
                         &:hover {
                             transform: translateY(-10px) scale(1.25);
