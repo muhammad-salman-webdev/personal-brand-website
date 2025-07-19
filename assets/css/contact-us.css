@@ -395,111 +395,109 @@
         line-height: 28px;
     }
 
-    .info-main-container {}
-}
+    .info-main-container {
 
-.info-main-container {
+        /* gap: px; */
+        .info-heading {
 
-    /* gap: px; */
-    .info-heading {
+            /* pehly ya15 tha  */
+            &>p {
+                font-size: 21px;
+                line-height: 29px;
+                max-width: 330px;
+                padding: 8px 0;
+            }
+        }
 
-        /* pehly ya15 tha  */
-        &>p {
-            font-size: 21px;
-            line-height: 29px;
-            max-width: 330px;
-            padding: 8px 0;
+        .feature-container {
+            position: relative;
+
+            .features-list {
+                gap: 22px;
+                margin-top: 14px;
+
+                .feature-item {
+                    span {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+
+        .contact-video {
+            max-width: 180px;
+            top: -174px;
+            right: 27px;
         }
     }
 
-    .feature-container {
-        position: relative;
+    .contact-box-container {
+        margin-top: 26px;
+        padding: 28px 16px;
 
-        .features-list {
-            gap: 22px;
-            margin-top: 14px;
+        .contact-box {
+            flex-direction: column;
+            gap: 30px;
 
-            .feature-item {
-                span {
-                    font-size: 21px;
+            .contact-item {
+                gap: 0;
+            }
+        }
+
+        .contact-address {
+            max-width: 320px;
+            font-size: 14px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    /* #######################  */
+    .contact-form-container {
+        padding: 20px 20px;
+
+        & .contact-form {
+            & .form-input-group {
+                .form-inputs {
+                    flex-direction: column;
+
+                    input {
+                        padding: 20px 18px;
+                    }
                 }
             }
         }
     }
 
-    .contact-video {
-        max-width: 180px;
-        top: -174px;
-        right: 27px;
-    }
-}
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .booking-section {
+        & .booking-container {
+            padding: 20px;
 
-.contact-box-container {
-    margin-top: 26px;
-    padding: 28px 16px;
-
-    .contact-box {
-        flex-direction: column;
-        gap: 30px;
-
-        .contact-item {
-            gap: 0;
-        }
-    }
-
-    .contact-address {
-        max-width: 320px;
-        font-size: 14px;
-    }
-
-    .social-links {
-        margin-top: 10px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        a {
-            font-size: 20px;
-        }
-    }
-}
-
-/* #######################  */
-/* #######################  */
-/* #######################  */
-/* #######################  */
-.contact-form-container {
-    padding: 20px 20px;
-
-    & .contact-form {
-        & .form-input-group {
-            .form-inputs {
-                flex-direction: column;
-
-                input {
-                    padding: 20px 18px;
-                }
-            }
-        }
-    }
-}
-
-/* #########################  */
-/* #########################  */
-/* #########################  */
-/* #########################  */
-/* #########################  */
-.booking-section {
-    & .booking-container {
-        padding: 20px;
-
-        & .booking-header {
-            .text-fade-header {
-                padding: 0;
-                font-size: 25px;
-
-                span {
+            & .booking-header {
+                .text-fade-header {
+                    padding: 0 12px 20px;
                     font-size: 25px;
-                    line-height: 32px;
+
+                    span {
+                        font-size: 25px;
+                        line-height: 32px;
+                    }
                 }
             }
         }
@@ -631,21 +629,59 @@
 
 /* ############################  */
 @media (max-width: 420px) {
+    .text-lg-23 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .text-md-15 {
+        font-size: 13px;
+    }
+
+    .text-fade-md {
+        font-size: 17px;
+        line-height: 22px;
+
+        span {
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
     .contact-info-section {
         .info-main-container {
+            & .info-heading {
+                &>p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    max-width: 210px;
+                }
+            }
+
             gap: 16px;
 
             .info-heading {
                 h1 {
-                    font-size: 52px;
-                    max-width: 200px;
+                    font-size: 41px;
+                    line-height: 47px;
                 }
             }
 
             .contact-video {
-                max-width: 120px;
-                top: -195px;
-                right: 20px;
+                max-width: 100px;
+                top: -127px;
+                right: 16px;
+            }
+
+            & .feature-container {
+                & .features-list {
+                    & .feature-item {
+                        span {
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -673,10 +709,44 @@
     /* #########################  */
     .contact-form-container {
         & .contact-form {
+            p {
+                font-size: 11px;
+                line-height: 15px;
+                max-width: 250px;
+
+                a {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+
             & .form-input-group {
+                gap: 3px;
+
                 & .form-inputs {
+                    gap: 3px;
+
                     input {
-                        padding: 14px 10px;
+                        border: 1px solid rgb(97, 94, 94);
+                        padding: 10px 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    .booking-section {
+        & .booking-container {
+            & .booking-header {
+                .text-fade-header {
+                    padding-bottom: 20px;
+                    font-size: 12px;
+
+                    span {
+                        line-height: 15px;
+                        font-size: 12px;
                     }
                 }
             }

@@ -936,7 +936,6 @@
 
                     div {
                         h2 {
-                            background: red;
                             font-size: 28px;
                             line-height: 34px;
                         }
@@ -1004,6 +1003,263 @@
 
             p {
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+/* ##################  */
+/* ##################  */
+/* ##################  */
+@media (max-width:420px) {
+    .project-intro-section {
+        .project-intro-container {
+            .info-container {
+                & .project-info {
+                    & .tags-container {
+                        .tag {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                .intro-desc {
+                    p {
+                        max-width: 280px;
+                    }
+                }
+            }
+        }
+    }
+
+    .overview-container {
+        .overview-list {
+            .overview-item {
+                :nth-child(1) {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                :nth-child(2) {
+                    font-size: 9px;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-challenge-section {
+        & .project-challenge-container {
+            & .challenge-container {
+                .chal-content {
+                    font-size: 16px;
+                    line-height: 21px;
+
+                    span {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+
+                & .chal-Tags-wrapper {
+                    .tags-box {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        & .tags {
+                            * {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-ourwork-section {
+        & .project-ourwork-container {
+            .work-content {
+                font-size: 14px;
+
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    /* ############################  */
+    /* ############################  */
+    .project-ourwork-section {
+        margin: 40px 0;
+
+        .mockups-container {
+            gap: 10px;
+
+            .mockup-container {
+                gap: 10px;
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    flex-direction: column-reverse;
+                }
+
+                .mockup-content {
+                    min-width: 100%;
+                    gap: 40px;
+                    height: max-content;
+                    padding: 14px;
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ##############################  */
+    /* ##############################  */
+    /* ##############################  */
+    .project-exper-video {
+        .exper-heading {
+            padding: 10px 0 24px;
+
+            h2 {
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    /* ##############################  */
+    .project-plan-section {
+        margin: 60px 0;
+
+        .project-plan-container {
+            .plan-main-container {
+                .plan-title {
+                    div {
+                        h2 {
+                            font-size: 40px;
+                            line-height: 48px;
+                        }
+
+                        i {
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ############################  */
+    .project-plan-section {
+        margin: 50px 0;
+
+        .project-plan-container {
+            gap: 10px;
+
+            .plan-main-container {
+                .plan-title {
+                    margin: 10px 0;
+
+                    div {
+                        h2 {
+                            font-size: 24px;
+                            line-height: 29px;
+                        }
+
+                        i {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                .plan-containers {
+                    grid-template-columns: repeat(1, 1fr);
+
+                    & .plan-container {
+                        padding: 8px;
+
+                        p {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    /* #########################  */
+    .result-section {
+        margin: 40px 0;
+
+        & .result-container {
+            .result-content {
+                padding: 26px 28px;
+            }
+        }
+    }
+
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    /* #####################  */
+    .testimonial-section {
+        margin: 40px 0;
+
+        .testimonial-container {
+            &>p {
+                font-size: 24px;
+                line-height: 29px;
+
+                & span {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+
+    .testimonial-profile {
+        & .profile-image {
+            width: 48px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        & .profile-title {
+            h3 {
+                font-size: 16px;
+                line-height: 21px;
+            }
+
+            p {
+                font-size: 13px;
             }
         }
     }
