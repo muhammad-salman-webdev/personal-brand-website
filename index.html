@@ -17,7 +17,7 @@
 
     <!-- Custom CSS File Links -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/responsive/responsive.css" />
 
     <!-- Title -->
     <title>Home Page</title>
@@ -138,10 +138,13 @@
                   </li>
                 </ul>
               </nav>
+              <div class="floating-bg-gradient-container">
+                <div class="gradient-background-single"></div>
+              </div>
             </div>
             <!-- Right Button -->
             <div class="header-right-button">
-              <a href="#" class="c_plasma-button animate__randomly_on_hover">
+              <a href="#" class="c_plasma-button">
                 <div class="c_plasma-button-inner">
                   <div class="c_plasma-button-inner-box">
                     <div class="c_plamsa-button-inner-glow-1"></div>
@@ -158,14 +161,19 @@
                 <div class="c_plasma-button-bg-circle"></div>
               </a>
             </div>
+            <!-- Mobile Menu Button -->
+            <div class="resp-menu-toggle-btn">
+              <input type="checkbox" id="menu-check" />
+              <label for="menu-check" class="menu-icon">
+                <div class="menu_bars"></div>
+              </label>
+            </div>
+            <!-- Mobile Menu Overlay -->
+            <div class="resp-menu-overlay"></div>
           </div>
         </header>
       </div>
     </section>
-
-    <!-- --------------------- -->
-    <!-- End :: Header Section -->
-    <!-- --------------------- -->
 
     <!-- ######################################### -->
     <!-- ######################################### -->
@@ -182,7 +190,7 @@
     <!-- START :: Hero Section -->
     <!-- --------------------- -->
 
-    <section class="hero-section" id="heroSection" style="display: none">
+    <section class="hero-section" id="heroSection">
       <div class="container">
         <div class="hero-section-container">
           <!-- Hero Content -->
@@ -201,6 +209,49 @@
               that elevate brands, drive engagement, and help businesses grow
               online.
             </p>
+            <!-- Clients Worked With -->
+            <div class="hero-social-proof" id="heroSocialProof">
+              <div class="clients-images">
+                <div class="tooltip">
+                  <span> View Success Story </span>
+                </div>
+                <a href="#">
+                  <img
+                    src="assets/media/images/clients-worked-with/profile-images/roman-yousupov.png"
+                    alt="" />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/media/images/clients-worked-with/profile-images/saimer-neives.jpeg"
+                    alt="" />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/media/images/clients-worked-with/profile-images/ivory-becker.png"
+                    alt="" />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/media/images/clients-worked-with/profile-images/lukas-kalliantasis.jpg"
+                    alt="" />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/media/images/clients-worked-with/profile-images/john-mouzakitis.jpeg"
+                    alt="" />
+                </a>
+              </div>
+              <a href="project.html" class="stars-text">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="text"> 20+ Happy Clients </div>
+              </a>
+            </div>
             <!-- Button - CTA -->
             <div class="hero-cta-button" id="heroCtaBtn">
               <a href="#" class="c_plasma-button animate__randomly">
@@ -230,42 +281,42 @@
                   <!-- Logos -->
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-5.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="https://donetracksclub.com/wp-content/uploads/2024/07/partner-3.png"
+                      src="assets/media/images/clients-worked-with/partner.webp"
                       alt="#" />
                   </div>
                 </div>
@@ -295,10 +346,7 @@
     <!-- START :: Projects Section -->
     <!-- ------------------------- -->
 
-    <section
-      class="projects-section"
-      id="projectsSection"
-      style="display: none">
+    <section class="projects-section" id="projectsSection">
       <div class="container">
         <div class="projects-section-header">
           <h2 class="color__diff" id="projectsHeading">

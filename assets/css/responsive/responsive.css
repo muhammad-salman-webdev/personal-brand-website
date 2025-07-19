@@ -1,11 +1,214 @@
-@media (max-width:1020px) {
+@media (max-width:1024px) {
     .header-section {
         .header-container {
             .header-logo {}
 
             .header-nav-container {
+                gap: 14px;
+
                 .nav-container {
                     display: none;
+                    position: fixed;
+                    top: 90px;
+                    left: 20px;
+                    bottom: 20px;
+                    width: 350px;
+                    z-index: 10;
+                    /* backdrop-filter: blur(6px); */
+                    border-radius: 20px;
+                    overflow-x: hidden;
+                    overflow: hidden;
+
+                    .floating-bg-gradient-container {
+                        display: block;
+                        position: absolute;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        background-color: rgba(255,
+                                255,
+                                255,
+                                0.05);
+                        /* border: 1px solid rgba(255, 255, 255, 0.1); */
+                        /* backdrop-filter: blur(8px); */
+                        inset: 0;
+
+                        .gradient-background-single {
+                            position: absolute;
+                            inset: 0;
+                            overflow: hidden;
+                            pointer-events: none;
+                            z-index: 1;
+                            border-radius: 17px;
+
+                            .liquid-ball {
+                                margin: 100px 0 0 100px;
+                                position: absolute;
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                                filter: blur(80px);
+                                opacity: 0.7;
+                                transform: translate(-50%,
+                                        -50%);
+                                will-change: background-image, transform, opacity, filter;
+                                --color1: #a78cd7;
+                                --color2: #7a59ab;
+                                --gradient-pos-x: 40%;
+                                --gradient-pos-y: 40%;
+                                background-image: radial-gradient(circle at var(--gradient-pos-x) var(--gradient-pos-y),
+                                        var(--color1),
+                                        var(--color2),
+                                        transparent 70%);
+                            }
+                        }
+                    }
+
+                    &>nav {
+                        padding: 15px 10px 15px 0;
+                        /* background: #000000a0; */
+                        backdrop-filter: blur(6px);
+                        z-index: 10;
+                        position: relative;
+                        border-radius: 17px;
+                        /* background: rgb(59, 59, 59); */
+                        /* background-color: rgba(255,
+                                255,
+                                255,
+                                0.05); */
+                        background: #000000ae;
+                        padding: 0;
+                        margin: 4px;
+                        width: calc(100% - 8px);
+                        height: calc(100% - 8px);
+                        padding: 10px 10px;
+
+                        &>ul {
+                            align-items: start;
+                            flex-direction: column;
+                            overflow: auto;
+                            height: 100%;
+                            width: 100%;
+
+                            &>li {
+                                &>a {
+                                    &:hover {}
+                                }
+
+                                &>a,
+                                &.sub-menu .trigerer {
+
+                                    &:hover,
+                                    &._active {
+                                        background-color: unset;
+                                        transform: none;
+                                    }
+                                }
+
+                                &.sub-menu {
+                                    flex-direction: column;
+
+                                    .trigerer {
+
+                                        &:hover,
+                                        &._active {
+                                            /* background-color: unset;
+                                            transform: none; */
+                                        }
+
+                                        span {}
+
+                                        i {}
+                                    }
+
+                                    .sub-menu-container {
+                                        min-width: 100%;
+                                        position: relative;
+                                        top: 0;
+                                        padding: 5px 10px 20px 40px;
+                                        overflow: hidden;
+
+                                        .sub-menu-wrapper {
+                                            padding: 0;
+                                            background: none;
+
+                                            .sub-menu-list {
+                                                min-width: 100%;
+                                                width: 100%;
+
+                                                &>div {
+                                                    span {}
+                                                }
+
+                                                &>ul {
+                                                    li {
+                                                        a {
+                                                            i {}
+                                                        }
+
+                                                        a,
+                                                        a span {
+                                                            font-size: 14px;
+                                                        }
+
+                                                        a:has(i),
+                                                        a:has(i) span {}
+                                                    }
+                                                }
+                                            }
+
+                                            .sub-menu-icon {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    .sub-menu-overlay {
+                                        display: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-right-button {}
+
+                .resp-menu-toggle-btn {
+                    display: block;
+                    z-index: 11;
+                }
+
+                .resp-menu-overlay {
+                    display: none;
+                    background-color: rgba(0, 0, 0, 0.379);
+                    width: 100%;
+                    height: 100vh;
+                    position: fixed;
+                    inset: 0;
+                    z-index: 2;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(3px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .header-section {
+        .header-container {
+            height: 70px;
+
+            .header-logo {
+                img {}
+            }
+
+            .header-nav-container {
+                gap: 14px;
+
+                .nav-container {
+                    width: calc(100vw - 40px);
+                    top: 75px;
 
                     &>nav {
                         &>ul {
@@ -14,8 +217,25 @@
                                     &:hover {}
                                 }
 
+                                &>a,
+                                &.sub-menu .trigerer {
+
+                                    &:hover,
+                                    &._active {}
+                                }
+
                                 &.sub-menu {
-                                    .trigerer {}
+                                    flex-direction: column;
+
+                                    .trigerer {
+
+                                        &:hover,
+                                        &._active {}
+
+                                        span {}
+
+                                        i {}
+                                    }
 
                                     .sub-menu-container {
                                         .sub-menu-wrapper {
@@ -51,6 +271,12 @@
                 }
 
                 .header-right-button {}
+
+                .resp-menu-toggle-btn {
+                    display: block;
+                }
+
+                .resp-menu-overlay {}
             }
         }
     }

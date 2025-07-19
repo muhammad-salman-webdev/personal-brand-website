@@ -5,6 +5,9 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
 }
 
 * {
@@ -28,6 +31,17 @@
 body {
     background-color: var(--black);
     color: white;
+    overflow-x: hidden;
+}
+
+body.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+html.no-scroll {
+    overflow: hidden;
 }
 
 img {
