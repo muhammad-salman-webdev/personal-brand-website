@@ -3,7 +3,7 @@ function renderBrandsWorkWithSwiper() {
 
   const swiper = new Swiper(".brands-worked-with-swiper", {
     slidesPerView: "auto", // Show as many slides as fit automatically
-    spaceBetween: 40, // Space (in px) between each slide
+    // spaceBetween: 30, // Space (in px) between each slide
     loop: true, // Enable infinite looping of slides
     speed: 3000, // Scroll speed (in milliseconds) controlling the continuous scroll pace
     autoplay: {
@@ -12,6 +12,19 @@ function renderBrandsWorkWithSwiper() {
     },
     freeMode: true, // Enable free scrolling mode for momentum-based interaction
     freeModeMomentum: false, // Disable momentum to maintain constant speed without slowing down
+
+    // Breakpoints
+    breakpoints: {
+      0: {
+        spaceBetween: 16,
+      },
+      480: {
+        spaceBetween: 25,
+      },
+      768: {
+        spaceBetween: 30,
+      },
+    },
   });
 }
 
