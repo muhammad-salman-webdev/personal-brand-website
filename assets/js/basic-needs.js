@@ -20,4 +20,4 @@ import "./components/worked-brands-logo-swiper.js";
 // import "./gsap-animations/home-welcome-gsap.js";
 
 // GSAP scroll-triggered animations for the projects section
-// import "./gsap-animations/projects-section-onscroll-gsap.js";
+import "./gsap-animations/projects-section-onscroll-gsap.js";

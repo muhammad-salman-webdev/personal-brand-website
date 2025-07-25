@@ -236,6 +236,20 @@ h3 {
     z-index: 9999;
 }
 
+.section---header {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        max-width: 560px;
+        margin: 16px auto 0;
+    }
+}
+
+.section---gap {
+    margin-top: 75px;
+}
+
 @media (max-width:992px) {
 
     /* Project Process Label  */
