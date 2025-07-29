@@ -21,3 +21,6 @@ import "./components/worked-brands-logo-swiper.js";
 
 // GSAP scroll-triggered animations for the projects section
 import "./gsap-animations/projects-section-onscroll-gsap.js";
+
+// GSAP Changing dark to light theme by scrolling through Home Page Services Section
+import "./gsap-animations/home-services-scrolling-dark-to-light-theme.js";

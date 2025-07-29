@@ -439,3 +439,166 @@
         }
     }
 }
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0.185;
+    }
+
+    50% {
+        transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(.7);
+        opacity: 0;
+    }
+}
+
+.services-section {
+
+    /* background-color: #f2f3f5; */
+    /* height: 1000px; */
+    .section---header {
+
+        p,
+        h2 {
+            color: white;
+
+            span {
+                color: inherit;
+            }
+        }
+    }
+
+    .services-layout-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+        gap: 16px;
+
+        .service-card-container {
+            background-color: #fff;
+            border: 1px solid #dfe0e4;
+            border-radius: 20px;
+            padding: 16px;
+
+            .service-card-inner {
+                display: flex;
+                flex-direction: column;
+
+                .service-card-img {
+                    display: flex;
+                    border-radius: 16px;
+                    position: relative;
+
+                    .label {
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        padding: 5px 10px;
+                        background: var(--service-color);
+                        color: white;
+                        font-size: 14px;
+                        border-radius: 6px;
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .service-content-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    padding: 16px;
+
+                    .service-name {
+                        color: rgb(22, 23, 25);
+                        font-size: 40px;
+                        font-weight: 500;
+                        letter-spacing: -1.57962px;
+                        max-width: 325px;
+                        line-height: 44px;
+                    }
+
+                    .services-list {
+                        ul {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 12px;
+
+                            li {
+                                color: rgb(142, 144, 154);
+                                font-size: 16px;
+                                padding-left: 24px;
+                                font-weight: 500;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+
+                                &::before {
+                                    content: '';
+                                    width: 8px;
+                                    aspect-ratio: 1/1;
+                                    background-color: var(--service-color);
+                                    display: block;
+                                    position: absolute;
+                                    left: 4px;
+                                    border-radius: 50%;
+                                }
+
+                                &::after {
+                                    content: '';
+                                    width: 16px;
+                                    aspect-ratio: 1/1;
+                                    background-color: var(--service-color);
+                                    display: block;
+                                    opacity: .185;
+                                    position: absolute;
+                                    left: 0;
+                                    border-radius: 50%;
+                                    animation: pulse 2s infinite ease;
+                                    animation-delay: var(--service-anim-delay);
+                                }
+                            }
+                        }
+                    }
+
+                    .service-btns {
+                        display: flex;
+                        gap: 12px;
+
+                        a {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    .service-desc {
+                        p {
+                            color: rgb(142, 144, 154);
+                            font-size: 14px;
+                            letter-spacing: -0.4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
