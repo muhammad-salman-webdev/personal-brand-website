@@ -280,6 +280,60 @@
     }
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+    .services-section {
+        .section---header {
+
+            p,
+            h2 {
+                span {}
+            }
+        }
+
+        .services-layout-container {
+            .service-card-container {
+                .service-card-inner {
+                    .service-card-img {
+                        .label {}
+
+                        img {}
+                    }
+
+                    .service-content-container {
+                        .service-name {
+                            font-size: 32px;
+                            letter-spacing: -.962px;
+                            line-height: 36px;
+                        }
+
+                        .services-list {
+                            ul {
+                                grid-template-columns: 1fr;
+
+                                li {
+                                    &::before {}
+
+                                    &::after {}
+                                }
+                            }
+                        }
+
+                        .service-btns {
+                            flex-direction: column;
+
+                            a {}
+                        }
+
+                        .service-desc {
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:768px) {
     .hero-bg-video {
         video {}
@@ -373,6 +427,52 @@
         .projects-container {
             display: grid;
             grid-template-columns: 1fr;
+        }
+    }
+
+    .services-section {
+        .section---header {
+
+            p,
+            h2 {
+                span {}
+            }
+        }
+
+        .services-layout-container {
+            grid-template-columns: 1fr;
+
+            .service-card-container {
+                .service-card-inner {
+                    .service-card-img {
+                        .label {}
+
+                        img {}
+                    }
+
+                    .service-content-container {
+                        .service-name {}
+
+                        .services-list {
+                            ul {
+                                li {
+                                    &::before {}
+
+                                    &::after {}
+                                }
+                            }
+                        }
+
+                        .service-btns {
+                            a {}
+                        }
+
+                        .service-desc {
+                            p {}
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -559,6 +659,72 @@
                 width: 90px;
 
                 img {}
+            }
+        }
+    }
+
+    .services-section {
+        .section---header {
+
+            p,
+            h2 {
+                span {}
+            }
+        }
+
+        .services-layout-container {
+            .service-card-container {
+                padding: 10px;
+                border-radius: 12px;
+
+                .service-card-inner {
+                    .service-card-img {
+                        .label {
+                            font-size: 12px;
+                            left: 8px;
+                            top: 8px;
+                        }
+
+                        img {}
+                    }
+
+                    .service-content-container {
+                        padding: 16px 10px 10px;
+                        gap: 12px;
+
+                        .service-name {
+                            font-size: 26px;
+                            letter-spacing: -.962px;
+                            line-height: 32px;
+                        }
+
+                        .services-list {
+                            ul {
+                                grid-template-columns: 1fr;
+                                margin: 4px 0 6px;
+
+                                li {
+                                    font-size: 14px;
+
+                                    &::before {}
+
+                                    &::after {}
+                                }
+                            }
+                        }
+
+                        .service-btns {
+                            flex-direction: column;
+                            gap: 6px;
+
+                            a {}
+                        }
+
+                        .service-desc {
+                            p {}
+                        }
+                    }
+                }
             }
         }
     }
