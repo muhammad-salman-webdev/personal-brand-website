@@ -17,7 +17,10 @@ import "./components/plasma-button.js";
 import "./components/worked-brands-logo-swiper.js";
 
 // GSAP animation module for the home page welcome section
-import "./gsap-animations/home-welcome-gsap.js";
+// import "./gsap-animations/home-welcome-gsap.js";
 
 // GSAP scroll-triggered animations for the projects section
 import "./gsap-animations/projects-section-onscroll-gsap.js";
+
+// GSAP Changing dark to light theme by scrolling through Home Page Services Section
+import "./gsap-animations/home-services-scrolling-dark-to-light-theme.js";
