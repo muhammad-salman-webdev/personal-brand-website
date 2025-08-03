@@ -273,6 +273,34 @@
 
 /* ############################  */
 /* ############################  */
+@media (max-width: 1156px) {
+    .text-lg-23 {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .text-fade-md {
+        font-size: 23px;
+        line-height: 29px;
+
+        span {
+            font-size: 23px;
+            line-height: 28px;
+        }
+    }
+
+    .contact-form-container {
+        & .contact-form {
+            & .form-input-group {
+                .form-inputs {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
 /* ############################  */
 /* ############################  */
 /* ############################  */
@@ -337,6 +365,16 @@
             }
         }
     }
+
+    .contact-form-container {
+        & .contact-form {
+            & .form-input-group {
+                .form-inputs {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
 }
 
 /* ############################  */
@@ -387,6 +425,7 @@
         }
 
         .contact-video {
+            max-width: 180px;
             top: -174px;
             right: 27px;
         }
@@ -452,7 +491,7 @@
 
             & .booking-header {
                 .text-fade-header {
-                    padding: 0;
+                    padding: 0 12px 20px;
                     font-size: 25px;
 
                     span {
@@ -468,6 +507,14 @@
 /* ############################  */
 /* ############################  */
 /* ############################  */
+@media (max-width: 611px) {
+    .info-main-container {
+        .contact-video {
+            max-width: 150px;
+        }
+    }
+}
+
 /* ############################  */
 /* ############################  */
 @media (max-width: 576px) {
@@ -517,7 +564,7 @@
         }
 
         .contact-video {
-            width: 115px;
+            max-width: 135px;
             top: -147px;
             right: 18px;
         }
@@ -525,7 +572,7 @@
 
     .contact-box-container {
         .reviews-image {
-            margin-top: 70px q;
+            margin-top: 70px;
         }
 
         .contact-box {
@@ -565,4 +612,147 @@
             }
         }
     }
+}
+
+/* ############################  */
+@media (max-width: 498px) {
+    .contact-info-section {
+        margin-top: 20px;
+
+        .info-main-container {
+            .contact-video {
+                max-width: 110px;
+            }
+        }
+    }
+}
+
+/* ############################  */
+@media (max-width: 420px) {
+    .text-lg-23 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .text-md-15 {
+        font-size: 13px;
+    }
+
+    .text-fade-md {
+        font-size: 17px;
+        line-height: 22px;
+
+        span {
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
+    .contact-info-section {
+        .info-main-container {
+            & .info-heading {
+                &>p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    max-width: 210px;
+                }
+            }
+
+            gap: 16px;
+
+            .info-heading {
+                h1 {
+                    font-size: 41px;
+                    line-height: 47px;
+                }
+            }
+
+            .contact-video {
+                max-width: 100px;
+                top: -127px;
+                right: 16px;
+            }
+
+            & .feature-container {
+                & .features-list {
+                    & .feature-item {
+                        span {
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-box-container {
+        .contact-box {
+            gap: 20px;
+
+            .contact-item {
+                gap: 0;
+            }
+        }
+
+        & .social-links {
+            display: flex;
+            gap: 8px;
+
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    .contact-form-container {
+        & .contact-form {
+            p {
+                font-size: 11px;
+                line-height: 15px;
+                max-width: 250px;
+
+                a {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+
+            & .form-input-group {
+                gap: 3px;
+
+                & .form-inputs {
+                    gap: 3px;
+
+                    input {
+                        border: 1px solid rgb(97, 94, 94);
+                        padding: 10px 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
+    .booking-section {
+        & .booking-container {
+            & .booking-header {
+                .text-fade-header {
+                    padding-bottom: 20px;
+                    font-size: 12px;
+
+                    span {
+                        line-height: 15px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #########################  */
+    /* #########################  */
 }
