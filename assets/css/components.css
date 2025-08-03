@@ -62,13 +62,14 @@
             align-items: center;
             display: flex;
             flex: none;
-            flex-direction: column;
+            /* flex-direction: column; */
             flex-wrap: nowrap;
             gap: 10px;
             height: min-content;
             justify-content: center;
             overflow: hidden;
             padding: 7px 16px;
+            padding: 8px 16px;
             position: relative;
             width: 100%;
             /* will-change: var(--framer-will-change-override, transform); */
@@ -78,6 +79,21 @@
                     rgb(12, 12, 12));
             border-radius: 10px;
             opacity: 1;
+
+            i {
+                color: white;
+                position: relative;
+                z-index: 2;
+                font-size: 18px;
+            }
+
+            span {
+                display: block;
+                position: relative;
+                z-index: 2;
+                will-change: transform;
+                font-size: 16px;
+            }
 
             .c_plamsa-button-inner-glow-1 {
                 flex: none;
@@ -129,14 +145,6 @@
                 border-radius: 999px;
                 filter: blur(10px);
                 opacity: 1;
-            }
-
-            span {
-                display: block;
-                position: relative;
-                z-index: 2;
-                will-change: transform;
-                font-size: 16px;
             }
         }
 
