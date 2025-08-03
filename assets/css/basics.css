@@ -27,6 +27,7 @@
     --gray: gray;
     --border-radius: 20px;
     --border-color: #dfe0e4;
+    --about-us-gray-color: #b4b5bb;
 }
 
 body {
@@ -60,10 +61,6 @@ p,
 span {
     font-size: 18px;
     line-height: 24px;
-}
-
-p {
-    color: rgb(214, 214, 214);
 }
 
 h1 {
