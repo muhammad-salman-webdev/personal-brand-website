@@ -1,20 +1,3 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    scrollbar-width: thin;
-    scrollbar-color: white transparent;
-}
-
-* {
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-}
-
 :root {
     --black: #000000;
     --light-gray: #b9b0b0;
@@ -26,8 +9,27 @@
     --fs-large: 28px;
     --gray: gray;
     --border-radius: 20px;
+    transition: background-color 0.05s linear;
+    --scrollbar-thumb-color: white;
     --border-color: #dfe0e4;
     --about-us-gray-color: #b4b5bb;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-color: var(--scrollbar-thumb-color) transparent;
+}
+
+* {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -232,6 +234,20 @@ h3 {
     height: 100vh;
     background: rgb(0, 0, 0);
     z-index: 9999;
+}
+
+.section---header {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        max-width: 560px;
+        margin: 16px auto 0;
+    }
+}
+
+.section---gap {
+    margin-top: 75px;
 }
 
 @media (max-width:992px) {
