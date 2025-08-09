@@ -246,6 +246,14 @@
     gap: 40px;
     opacity: .75;
 
+    &.tech-stack-container {
+        margin-top: 0;
+
+        &>h3 {
+            color: black;
+        }
+    }
+
     &>h3 {
         font-size: 16px;
         font-weight: 400;
