@@ -20,36 +20,46 @@ h2 {
 .about-us-text-fade {
     font-size: 27px;
     line-height: 34px;
+
+    span {
+        font-size: 27px;
+        line-height: 32px;
+    }
+}
+
+.about-us-text-fade {
     color: black;
     text-align: center;
     margin: 0 auto;
 
     span {
         color: var(--gray);
-        font-size: 27px;
-        line-height: 32px;
     }
 }
 
-.about-us-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 50px;
-    text-align: center;
+.about-us-section {
+    padding: 100px 0;
 
-    .about-us-text-fade {
-        max-width: 715px;
-    }
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+        text-align: center;
 
-    .about-us-image {
-        height: 436px;
-        object-fit: cover;
+        .about-us-text-fade {
+            max-width: 715px;
+        }
 
-        img {
-            width: 100%;
-            height: 100%;
+        .about-us-image {
+            height: 436px;
             object-fit: cover;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -107,7 +117,7 @@ h2 {
 /* ###############################  */
 /* ###############################  */
 .our-process-section {
-    margin: 100px 0;
+    padding: 100px 0;
 
     .our-process-container {
         text-align: center;
@@ -135,7 +145,7 @@ h2 {
 
             .process-card {
                 border: 1px solid #dfe0e4;
-                max-width: 665px;
+                max-width: 573px;
                 padding: 24px 24px 56px;
                 border-radius: 20px;
                 background-color: white;
@@ -166,7 +176,7 @@ h2 {
                 p {
                     text-align: start;
                     color: var(--about-us-gray-color);
-                    font-size: 27px;
+                    font-size: 24px;
                     line-height: 32px;
                     font-weight: 500;
                 }
@@ -174,7 +184,7 @@ h2 {
 
             &>:nth-child(2) {
                 background: #f2f3f5;
-                margin: -186px -66px 0 auto;
+                margin: -186px 100px 0 auto;
             }
 
             &>:nth-child(3) {
@@ -197,6 +207,354 @@ h2 {
                 margin-right: 20%;
                 margin-top: -160px;
                 margin-left: auto;
+            }
+        }
+    }
+}
+
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+@media (max-width:1200px) {
+    .our-process-section {
+        .our-process-container {
+            .process-cards {
+                .process-card-image {
+                    max-width: 350px;
+                }
+
+                .process-card {
+                    max-width: 565px;
+                    padding: 24px 24px 34px;
+
+                    .process-card-heading {
+                        .label-text {
+                            font-size: 13px;
+                        }
+
+                        .label-code {
+                            font-size: 22px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        margin: 20px 0 10px 0;
+                    }
+
+                    p {
+                        font-size: 22px;
+                        max-width: 475px;
+                    }
+                }
+
+                &>:nth-child(2) {
+                    max-width: 565px;
+                    margin: -180px 53px 0 auto;
+                }
+
+                &>:nth-child(3) {
+                    margin-top: -72px;
+                }
+
+                &>:nth-child(4) {
+                    max-width: 565px;
+                    margin-top: -170px;
+                }
+
+                &>:nth-child(5) {
+                    max-width: 565px;
+                    margin-right: 10%;
+                    margin-top: -31px;
+                }
+
+                &>:nth-child(6) {
+                    margin-right: 20%;
+                    margin-top: -160px;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+@media (max-width:978px) {
+    .about-us-section {
+        padding: 60px 0;
+    }
+
+    .intro-section {
+        padding: 60px 0;
+    }
+
+    .our-process-section {
+        padding: 60px 0;
+
+        .our-process-container {
+            .process-cards {
+                gap: 20px;
+
+                .process-card-image {
+                    max-width: 100%;
+                }
+
+                .process-card {
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 34px 34px 54px;
+
+                    .process-card-heading {
+                        .label-text {
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+
+                        .label-code {
+                            font-size: 32px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 32px;
+                        line-height: 38px;
+                        margin: 36px 0 10px 0;
+                    }
+
+                    p {
+                        font-size: 32px;
+                        max-width: 100%;
+                        line-height: 38px;
+                    }
+                }
+
+                &>:nth-child(2) {
+                    margin: 0;
+                }
+
+                &>:nth-child(3) {
+                    margin: 0;
+                }
+
+                &>:nth-child(4) {
+                    margin: 0;
+                }
+
+                &>:nth-child(5) {
+                    margin: 0;
+                }
+
+                &>:nth-child(6) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* #############################  */
+/* #############################  */
+/* #############################  */
+@media (max-width:768px) {}
+
+/* #############################  */
+/* #############################  */
+@media (max-width:678px) {
+    .about-us-section {
+        padding: 40px 0;
+    }
+
+    .intro-section {
+        padding: 40px 0;
+
+        .intro-container {
+            .about-us-text-fade {
+                margin: 22px auto 36px;
+            }
+        }
+    }
+
+    .our-process-section {
+        padding: 40px 0;
+
+        .our-process-container {
+            h2 {
+                margin: 24px 0;
+            }
+
+            .process-cards {
+                .process-card {
+                    padding: 24px 24px 34px;
+
+                    .process-card-heading {
+                        .label-text {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                        .label-code {
+                            font-size: 26px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 26px;
+                        line-height: 32px;
+                        margin: 24px 0 6px 0;
+                    }
+
+                    p {
+                        font-size: 26px;
+                        max-width: 100%;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+@media (max-width:576px) {
+    .heading-large {
+        font-size: 48px;
+        line-height: 58px;
+
+        span {
+            color: var(--gray);
+            font-family: "inter";
+        }
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .about-us-text-fade {
+        font-size: 20px;
+        line-height: 26px;
+
+        span {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .our-process-section {
+        .our-process-container {
+            .process-cards {
+                .process-card-image {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .process-card {
+                    padding: 24px 24px 34px;
+                    border-radius: 10px;
+
+                    .process-card-heading {
+                        .label-text {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        .label-code {
+                            font-size: 20px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin: 24px 0 6px 0;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        max-width: 100%;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+@media (max-width:420px) {
+    .heading-large {
+        font-size: 40px;
+        line-height: 48px;
+
+        span {
+            color: var(--gray);
+            font-family: "inter";
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 0 0 0 24px;
+    }
+
+    .about-us-text-fade {
+        font-size: 16px;
+        line-height: 20px;
+
+        span {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .our-process-section {
+        .our-process-container {
+            h2 {
+                margin: 0 0 24px 0;
+            }
+
+            .process-cards {
+                .process-card {
+                    padding: 16px 16px 26px;
+
+                    .process-card-heading {
+                        .label-text {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        .label-code {
+                            font-size: 16px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin: 16px 0 6px 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        max-width: 100%;
+                        line-height: 20px;
+                    }
+                }
             }
         }
     }
