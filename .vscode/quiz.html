@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Quiz App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #222;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .quiz-container {
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      .option {
+        display: block;
+        background: #444;
+        margin: 8px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .option:hover {
+        background: #555;
+      }
+      .next-btn {
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .next-btn:hover {
+        background: #0b5ed7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <h2 id="question">Question text</h2>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+    </div>
+
+    <script>
+      const quizData = [
+        {
+          question: "Which language runs in the browser?",
+          options: ["Java", "C", "Python", "JavaScript"],
+          correct: "JavaScript",
+        },
+        {
+          question: "What does CSS stand for?",
+          options: [
+            "Central Style Sheets",
+            "Cascading Style Sheets",
+            "Computer Style System",
+            "Creative Style Sheet",
+          ],
+          correct: "Cascading Style Sheets",
+        },
+        {
+          question: "What year was JavaScript launched?",
+          options: ["1996", "1995", "1994", "None of the above"],
+          correct: "1995",
+        },
+      ];
+
+      let currentQuestion = 0;
+      let score = 0;
+
+      function loadQuestion() {
+        const questionElement = document.getElementById("question");
+        const optionElements = document.querySelectorAll(".option");
+
+        let q = quizData[currentQuestion];
+        questionElement.textContent = q.question;
+        optionElements.forEach((btn, index) => {
+          btn.textContent = q.options[index];
+          btn.onclick = () => {
+            if (btn.textContent === quizData[currentQuestion].correct) {
+              score++;
+            }
+            currentQuestion++;
+            if (currentQuestion < quizData.length) {
+              loadQuestion();
+            } else {
+              document.getElementById(
+                "quiz"
+              ).innerHTML = `<h2>Your score: ${score}/${quizData.length}</h2>`;
+            }
+          };
+        });
+      }
+
+      loadQuestion();
+    </script>
+  </body>
+</html>
