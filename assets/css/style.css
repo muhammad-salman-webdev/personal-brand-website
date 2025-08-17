@@ -699,3 +699,99 @@
         }
     }
 }
+
+/* Testimonial Sections */
+.testimonial-card {
+    background: white;
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+
+    .testimonial-client {
+        max-width: 375px;
+        width: 100%;
+
+        .testimonial-client-img {
+            display: flex;
+        }
+    }
+
+    .testimonial-content {
+        display: flex;
+        flex-direction: column;
+
+        .testimonial-icon {
+            color: #673de6;
+            background: #f4f5ff;
+            width: 60px;
+            line-height: 0;
+            border-radius: 5px;
+            aspect-ratio: 1/1;
+            display: grid;
+            place-items: center;
+            font-size: 50px;
+        }
+
+        .testimonial-text {
+            font-size: 40px;
+            color: black;
+            margin: 20px 0;
+
+            span {
+                font-size: 40px;
+                color: #673de6;
+            }
+        }
+
+        .testimonial-readmore-btn {
+            border-bottom: 1px solid #bfbfbf;
+            padding-bottom: 20px;
+            margin-right: 20px;
+
+            a {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: rgb(103, 61, 230);
+            }
+        }
+
+        .testimonial-client-info {
+            margin-top: 20px;
+
+            .client-name {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 32px;
+                color: rgb(29, 30, 32);
+            }
+
+            .client-website {
+                font-size: 16px;
+                font-family: "DM Sans", sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgb(29, 30, 32);
+            }
+        }
+    }
+}
+
+.testimonial-section {
+    margin-top: 150px;
+
+    .testimonial-swiper-container {}
+}
+
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */

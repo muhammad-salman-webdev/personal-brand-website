@@ -19,6 +19,9 @@ import "./components/plasma-button.js";
 // Swiper carousel for displaying brands logos worked with
 import "./components/worked-brands-logo-swiper.js";
 
+// Swiper for client Testimonials
+import "./components/client-testimonials-swiper.js";
+
 // GSAP scroll-triggered animations for the projects section
 import "./gsap-animations/projects-section-onscroll-gsap.js";
 
