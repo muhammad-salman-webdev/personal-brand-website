@@ -5,7 +5,7 @@ function renderClientTestimonialsSwiper() {
     slidesPerView: 1, // Show as many slides as fit automatically
     // spaceBetween: 30, // Space (in px) between each slide
     loop: true, // Enable infinite looping of slides
-    speed: 1000, // Scroll speed (in milliseconds) controlling the continuous scroll pace
+    speed: 750, // Scroll speed (in milliseconds) controlling the continuous scroll pace
     // effect: "fade",
     autoplay: {
       delay: 5000, // No delay between slide transitions for smooth continuous scroll
@@ -14,6 +14,10 @@ function renderClientTestimonialsSwiper() {
     navigation: {
       nextEl: ".client-testimonial-control-buttons button.next",
       prevEl: ".client-testimonial-control-buttons button.prev",
+    },
+    pagination: {
+      el: ".client-testimonial-pagination",
+      clickable: true,
     },
     // freeMode: true, // Enable free scrolling mode for momentum-based interaction
     // freeModeMomentum: false, // Disable momentum to maintain constant speed without slowing down

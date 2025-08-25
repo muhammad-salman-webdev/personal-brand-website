@@ -285,6 +285,11 @@
     }
 }
 
+.tech-stack-container {
+    background-color: #f2f3f5;
+    padding: 60px 0;
+}
+
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
@@ -707,6 +712,7 @@
     /* border: 1px solid red; */
     border-radius: 16px;
     padding: 20px;
+    padding-right: 0;
     gap: 30px;
     align-items: center;
 
@@ -749,8 +755,8 @@
         .testimonial-readmore-btn {
             border-bottom: 1px solid #bfbfbf;
             padding-bottom: 20px;
-            margin-right: 20px;
 
+            /* margin-right: 20px; */
             a {
                 display: inline-block;
                 font-size: 16px;
@@ -782,9 +788,53 @@
 }
 
 .testimonial-section {
-    margin-top: 150px;
+    margin-top: 80px;
 
-    .testimonial-swiper-container {}
+    .testimonial-swiper-container {
+        margin-top: 65px;
+
+        .testimonial-container-wrapper {}
+
+        .client-testimonial-control-buttons {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            max-width: max-content;
+            margin-left: auto;
+            /* margin-right: 20px; */
+            margin-top: -80px;
+            z-index: 2;
+
+            button {
+                display: grid;
+                cursor: pointer;
+                place-items: center;
+                font-size: 40px;
+                width: 48px;
+                aspect-ratio: 1/1;
+                background: green;
+                border-radius: 100%;
+                border: none;
+                border: 0.8px solid rgba(0, 0, 0, 0);
+                font-size: 16px;
+                background: rgb(244, 245, 255);
+                color: rgb(103, 61, 230);
+                transition: all .3s ease;
+
+                &:hover {
+                    background: rgb(216, 220, 255);
+                }
+            }
+        }
+
+        .client-testimonial-pagination {
+            position: relative;
+            z-index: 2;
+            max-width: max-content;
+            margin: 120px auto 0;
+            /* transform: translateX(100px); */
+        }
+    }
 }
 
 /* -------------------- */
